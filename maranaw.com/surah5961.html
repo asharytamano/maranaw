@@ -1,0 +1,1446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from maranaw.com/surah.php?surah=68 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<title>Surah 68 - Maranaw Tafsir</title>
+<link rel="stylesheet" href="style.html">
+<link rel="stylesheet" href="surah.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="../fonts.googleapis.com/css2f281.css?family=Scheherazade+New&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maranao Tafsir</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Logo styles */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 64px;  /* default desktop size */
+    height: 64px;
+    margin-right: 10px;
+}
+
+/* Navigation styles */
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+.main-nav a:hover {
+    color: #ccc;
+}
+
+/* Horizontal rule */
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 64px;   /* smaller logo on mobile */
+        height: 64px;
+        margin-right: 8px;
+    }
+
+    .main-nav {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<!-- Open Graph (Facebook, Messenger, LinkedIn) -->
+<meta property="og:title" content="Maranao Tafsir – Tafsir sa Basa Maranao">
+<meta property="og:description" content="Official Maranao Tafsir resource online – rooted in the work of Engr. Abdulbasit Tamano.">
+<meta property="og:image" content="https://tafsir.maranaw.com/images/og-image.jpg">
+<meta property="og:url" content="https://tafsir.maranaw.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maranao Tafsir – Tafsir sa Basa Maranao">
+<meta name="twitter:description" content="Official Maranao Tafsir resource online – rooted in the work of Engr. Abdulbasit Tamano.">
+<meta name="twitter:image" content="https://tafsir.maranaw.com/images/og-image.jpg">
+<meta name="twitter:site" content="@YourHandle"> <!-- optional -->
+
+<div class="header-inner">
+    <div class="logo">
+        <a href="index-2.html">
+            <img src="images/logo-64x64.png" alt="Maranao Tafsir Logo">
+            Maranao Tafsir
+        </a>
+    </div>
+    <nav class="main-nav">
+        <a href="index-2.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Surah Index</a>
+        <a href="contact.html">Contact</a>
+        <a href="search.html">Search</a>
+        <a href="../drive.google.com/file/d/1lV7Fz8tb_4Bj7Zao1-uzdRH_OsSxm0KV/view.html">Get PDF</a>
+        <a href="https://maranaw.com/myquran" target="_blank">Get Mobile App</a>
+    </nav>
+</div>
+
+</header>
+<hr>
+<hr>
+
+<main class="site-content">
+
+<div class="surah-title">
+    68. Al-Qalam |     <span class="arabic">القَلَم</span>
+</div>
+
+<!-- 3 Toggle Buttons + Reciter Selector + Switches -->
+<div class="sticky-controls">
+  <div class="toggle-group">
+      <button id="btn-arabic">Arabic Only</button>
+      <button id="btn-maranao">Maranao Only</button>
+      <button id="btn-both" class="active">Arabic + Maranao</button>
+  </div>
+
+  <!-- Reciter Selector -->
+<div style="text-align:center; margin-top:10px;">
+    <label for="reciter" style="font-weight:bold;">Reciter: </label>
+    <select id="reciter" onchange="changeReciter(this.value)">
+        <option value="Alafasy" selected>Mishary Rashid Al-Afasy</option>
+        <option value="Sudais">Abdul Rahman Al-Sudais</option>
+        <option value="Ghamdi">Saad al-Ghamdi (40kbps)</option>
+        <option value="Rifai">Hani ar-Rifai (192kbps)</option>
+    </select>
+</div>
+
+  <!-- Auto-scroll toggle -->
+<div class="toggles-row">
+  <label class="switch">
+    <input type="checkbox" id="autoScrollToggle" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="toggle-label">🔄 Auto-scroll</span>
+
+  <label class="switch" style="margin-left:20px;">
+    <input type="checkbox" id="continuousPlayToggle" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="toggle-label">▶️ Continuous Play</span>
+</div>
+
+  <!-- View Favorites link -->
+  <div style="text-align:center; margin-top:10px;">
+      <a href="favorites.html" style="font-size:14px; color:#0066cc; text-decoration:none;">
+          <strong>🖤 VIEW FAVORITES</strong>
+      </a>
+  </div>
+</div>
+
+<!-- Bismillah -->
+    <div class="ayah-block bismillah-block">
+        <div class="quran-text">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+    </div>
+
+<!-- Ayahs -->
+        <div class="ayah-block" id="ayah-1">
+        <div class="quran-text">ن ۚ وَالْقَلَمِ وَمَا يَسْطُرُونَ 
+            <span class="ayah-number">(1)</span>
+        </div>
+        <div class="translation">Nun. (Batang a Arabic a so bo so Allah i Matao ko paka-aantapan Iyan on).  Ibt ko pansom ago so nganin a ipzorat iran.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:1" preload="none"
+                   data-surah="68"
+                   data-ayah="1"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:1')"
+                   onplay="highlightAyah('1')"
+                   onended="removeHighlight('1')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068001.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:1" onclick="togglePlay('68:1')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:1')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:1" value="0" max="100"
+         onchange="seekAudio('68:1', this.value)" style="width:200px;">
+  <span id="time-68:1" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:1" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:1', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(1)">Show Tafsir</button>
+            <button onclick="toggleFavorite(1)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(1)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '1',
+                                   'Nun. (Batang a Arabic a so bo so Allah i Matao ko paka-aantapan Iyan on).  Ibt ko pansom ago so nganin a ipzorat iran.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-1" class="tafsir">Giya ngkai a surah na Makkiyah - pd skaniyan ko mga surah a paganay a itoron sa Makkah go moripori a initoron ko mga surah a miyamanagipoon sa batang a pizatiman (حروف المقطعة).  Aya kadakl a ayat iyan na lima polo ago dowa (52).  Aya miyapanothol a pd a ngaran angkai a surah, na Surah Nun. (وَالْقَلَمِ) “Ibt ko pansom” - tlo a khapakay a pakaantapan sangkoto a miyaaloy a pansom a pizapaan o Allah: [1] So pansom a phagosarn o mga taw (the pen of human beings), odi na [2] So pansom a phagosarn o mga malaikat (the pen of angels) ko kipzoratn ko mga amal o mga manosiya datar o kiyaaloya on ko Ayah 82:10-12: (وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ، كِرَامًا كَاتِبِينَ، يَعْلَمُونَ مَا تَفْعَلُونَ) “Go mataan a titho a adn a khipakasisiyapa rkano (a mga malaikat),- A khisasakawn a pakapphanoratn (ko mga amal a marata mapiya) - Katawan iran so nganin a gii niyo nggagalbkn”.  Odi na [3] So pansom o okoran (pen of destinies) a so miyaaloy sa hadith a skaniyan so pagampaganay a adnn o Allah a piyakisorat Iyan on so langowa khaolawla ko 50 thousand years pn a da kapangadn.  “Mataan (a tig o Nabi) a aya pagampagnay a adnn o Allah na so pansom, sa pitharo Iyan on a ‘Sorat ka’.  Pitharo angkoto a pansom a: ‘Kadnang ko na antonaa i izorat akn’.  Sa pitharo o Allah a ‘Soratn ka so langowan a okoran a khaolawla o mga kaadn’.” (إِنَّ أَوَّلَ مَا خَلَقَ اللهُ الْقَلَمُ فَقَالَ لَهُ: اكْتُبْ، قَالَ: يَا رَبِّ وَمَا أَكْتُبُ؟ قَالَ: اكْتُبِ الْقَدَرَ وَمَا هُوَ كَائِنٌ إِلَى الْأَبَد). Aya bobotowan o Ibn Kathir a paka aantapan sangkoto a miyaaloy a pansom a pizapaan o Allah na so pansom o mga taw a phagosarn iran ko kasorat. Sii sangkai a ayat, na pphaki in’ngka o Allah ko mga oripn Iyan so limo a inilimo Iyan kiran nggolalan ko kinindaon Iyan kiran ko kasorat nggolalan ko pansom a pkhasabapan sa kapkha toona, kapkhaparoliya iran ko ilmo nggolalan ko kapaganad.  Isa a kiyapakalbiya o Allah sangkoto a kapaganad, na skaniyan i pagampaganay a ipando o Allah ko Nabi ko kiyatharoa Niyan on sa (اقْرَأْ) “Batiya ka”, maana paganad ka: (اقْرَأْ وَرَبُّكَ الْأَكْرَمُ، الَّذِي عَلَّمَ بِالْقَلَمِ، عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ) “Batiya ka! Go so Kadnan ka na lbi a Maginawa,- So miyangndao ko (kisoratn ko) pansom. - Inindao Niyan ko manosiya so nganin a di niyan katawan” Ayah 96:3-5. (وَمَا يَسْطُرُونَ) “ago so nganin a ipzorat iran” – Sii ko Ibn ‘Abbas na sii anan pakaaantapa ko nganin a ipzorat iran (a mga taw).  Sii pman ko As-Suddi na: so nganin a ipzorat iran (a mga malaikat).  So mga pd na: so nganin a piyakisorat o Allah ko pansom a okoran a khaolawla o langowa kaadn.</div>
+        <div id="share-links-1" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-2">
+        <div class="quran-text">مَا أَنتَ بِنِعْمَةِ رَبِّكَ بِمَجْنُونٍ 
+            <span class="ayah-number">(2)</span>
+        </div>
+        <div class="translation">Ibt ko pansom ka) Kna ba ska (hay Mohammad) sabap ko limo o Kadnan ka i ba ka maliliwat.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:2" preload="none"
+                   data-surah="68"
+                   data-ayah="2"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:2')"
+                   onplay="highlightAyah('2')"
+                   onended="removeHighlight('2')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068002.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:2" onclick="togglePlay('68:2')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:2')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:2" value="0" max="100"
+         onchange="seekAudio('68:2', this.value)" style="width:200px;">
+  <span id="time-68:2" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:2" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:2', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(2)">Show Tafsir</button>
+            <button onclick="toggleFavorite(2)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(2)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '2',
+                                   'Ibt ko pansom ka) Kna ba ska (hay Mohammad) sabap ko limo o Kadnan ka i ba ka maliliwat.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-2" class="tafsir">Dataraya so Ayah 81:22: (وَمَا صَاحِبُكُمْ بِمَجْنُونٍ) “Go kna ba so bolayoka iyo (a Mohammad (ﷺ)) na ba pmbthang”. Datar pn o Ayah 81:22: (وَمَا صَاحِبُكُمْ بِمَجْنُونٍ) “Go kna ba so bolayoka iyo (a Mohammad (ﷺ)) na ba pmbthang”.</div>
+        <div id="share-links-2" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-3">
+        <div class="quran-text">وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ 
+            <span class="ayah-number">(3)</span>
+        </div>
+        <div class="translation">Go mataan a aya rk ka na thitho dn a balas a di khatphd.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:3" preload="none"
+                   data-surah="68"
+                   data-ayah="3"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:3')"
+                   onplay="highlightAyah('3')"
+                   onended="removeHighlight('3')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068003.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:3" onclick="togglePlay('68:3')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:3')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:3" value="0" max="100"
+         onchange="seekAudio('68:3', this.value)" style="width:200px;">
+  <span id="time-68:3" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:3" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:3', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(3)">Show Tafsir</button>
+            <button onclick="toggleFavorite(3)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(3)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '3',
+                                   'Go mataan a aya rk ka na thitho dn a balas a di khatphd.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-3" class="tafsir">(غَيْرَ مَمْنُونٍ) “di khatphd” – datar anan so miyaaloy ko  (عَطَاءً غَيْرَ مَجْذُوذٍ) “pammgayan a di khatphd” Ayah 11:108.  Miyaaloy pn angkanan a sataga sa ayat sii ko Ayah 95:6. Ayah 68:2-3: (مَا أَنْتَ بِنِعْمَةِ رَبِّكَ بِمَجْنُونٍ، وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ) “Kna ba ska (hay Mohammad) sabap ko limo o Kadnan ka i ba ka pmbthanga.- Go mataan a rk ka so thitho a balas a da a kaposan iyan” - isa a mitotoro angkana a dowa a mga ayat na: ‘Da a taw a maliliwat a mbalasan sa da a taman iyan a balas ko gii niyan kapamthang’.</div>
+        <div id="share-links-3" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-4">
+        <div class="quran-text">وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ 
+            <span class="ayah-number">(4)</span>
+        </div>
+        <div class="translation">Go mataan a ska na titho a sii ko paparangayan a mala.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:4" preload="none"
+                   data-surah="68"
+                   data-ayah="4"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:4')"
+                   onplay="highlightAyah('4')"
+                   onended="removeHighlight('4')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068004.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:4" onclick="togglePlay('68:4')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:4')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:4" value="0" max="100"
+         onchange="seekAudio('68:4', this.value)" style="width:200px;">
+  <span id="time-68:4" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:4" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:4', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(4)">Show Tafsir</button>
+            <button onclick="toggleFavorite(4)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(4)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '4',
+                                   'Go mataan a ska na titho a sii ko paparangayan a mala.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-4" class="tafsir">Miyatharo o Nabi sa hadith a: (إِنَّمَا بُعِثْتُ لِأُتَمِّمَ مکارم الْأَخْلَاق) “Mataan a siyogo ako para tarotopn so mapiaya a paparangayan”.  Miyatharo o Nabi sa hadith a: (أكمل المؤمنين إيماناً أحسنهم خلقاً،) “Aya lbi a tarotop i paratiyaya ko mga moomin, na so lbi a mapiya kiran i parangay”. Iniiza ko A’isha o antonaa i paparangayan o Nabi (ﷺ), na aya insmbag iyan na: “Aya paparangayan o Nabi (ﷺ), na so dn so Qur’an”.  Pd sa kiyailayan sa kabolawan a parangay o Nabi, na pitharo o Ana ibn Malik a: “Siyakodo (phi service syowan) akn (a tig o Anas) so Nabi ko miyakasapolo ragon, na da dn a ba sataga bo a katharo a miyatharo iyan rakn a pd sa di kasosoat ko serbisyo akn rkaniyan odi na ba niyan rakn miyatharo a ‘Ino ngka oto pnggolawlaa?’, odi na ‘iinong ka oto da nggolawlaa?.”  Pd pn sa paparangayan o Nabi, na da rkaniyan i ba langowa pkhi aras rkaniyan, na pzaopn iyan.  Inonta bo igira a aya kiyaarasan, aya kiyalampasan, miyalalim, na so pd ko mga tamana o agama, ka sabnar a di niyan dn oto phakalpasn sa kiphangato niyan ko agama. Pd sa gii nbdowaa o Nabi lalayon, na giya ngkai a dowaa: (اللَّهمَّ اهدني لأحسنِ الأخلاقِ لا يَهدني لأحسنِها إلَّا أنتَ ، وقني سيِّئَ الأعمال والأخلاق لا يقي سيئَها إلا أنتَ) “Ya Allah, na toro akong Ka ko lbi a mapiya a paparangayan, ka da a phakatoro rakn roo a romowar Rka, go pakalidas ako ngka ko mga rarata a mga galbk ago mga paparangayan, ka da a maphakalidas ako niyan roo a romowar Rka”.  Pd pn sa dowaa o Nabi na (اللهمَّ كما حسَّنتَ خَلقي فحسِّنْ خُلُقي) “Ya Allah nadatar o kiyaphiyapiyaing Ka ko kiyaadnang Ka rakn, na pakapiyaang Ka so paparangayan akn”.</div>
+        <div id="share-links-4" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-5">
+        <div class="quran-text">فَسَتُبْصِرُ وَيُبْصِرُونَ 
+            <span class="ayah-number">(5)</span>
+        </div>
+        <div class="translation">Na khaylay ngka dn, go khaylay ran,</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:5" preload="none"
+                   data-surah="68"
+                   data-ayah="5"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:5')"
+                   onplay="highlightAyah('5')"
+                   onended="removeHighlight('5')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068005.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:5" onclick="togglePlay('68:5')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:5')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:5" value="0" max="100"
+         onchange="seekAudio('68:5', this.value)" style="width:200px;">
+  <span id="time-68:5" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:5" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:5', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(5)">Show Tafsir</button>
+            <button onclick="toggleFavorite(5)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(5)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '5',
+                                   'Na khaylay ngka dn, go khaylay ran,')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-5" class="tafsir">Tafsir not available</div>
+        <div id="share-links-5" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-6">
+        <div class="quran-text">بِأَييِّكُمُ الْمَفْتُونُ 
+            <span class="ayah-number">(6)</span>
+        </div>
+        <div class="translation">Khaylay iran) O antawaa rkano (siran a mga da pamaratiyaya o ska) i mafifitna (ko kaliwat).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:6" preload="none"
+                   data-surah="68"
+                   data-ayah="6"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:6')"
+                   onplay="highlightAyah('6')"
+                   onended="removeHighlight('6')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068006.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:6" onclick="togglePlay('68:6')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:6')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:6" value="0" max="100"
+         onchange="seekAudio('68:6', this.value)" style="width:200px;">
+  <span id="time-68:6" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:6" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:6', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(6)">Show Tafsir</button>
+            <button onclick="toggleFavorite(6)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(6)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '6',
+                                   'Khaylay iran) O antawaa rkano (siran a mga da pamaratiyaya o ska) i mafifitna (ko kaliwat).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-6" class="tafsir">(فَسَتُبْصِرُ وَيُبْصِرُونَ، بِأَيْيِكُمُ الْمَفْتُونُ) “Na khaylay ngka dn, go khaylay ran, - (Khaylay iran) O antawaa rkano (siran a mga da pamaratiyaya o ska) i mafifitna (ko kaliwat)” - datarai so Ayah 54:26: (سَيَعْلَمُونَ غَدًا مَنِ الْكَذَّابُ الْأَشِرُ) “Katokawan iran dn mapita (sa akir), o antawaa i bokhag, a takabor” ago datar pn o Ayah 34:24: (وَإِنَّا أَوْ إِيَّاكُمْ لَعَلَى هُدًى أَوْ فِي ضَلَالٍ مُبِينٍ) “Go mataan a skami odi na skano, na mataan a matatago ko toroan, odi na sii ko kadadag, a mapayag!”.</div>
+        <div id="share-links-6" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-7">
+        <div class="quran-text">إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَن ضَلَّ عَن سَبِيلِهِ وَهُوَ أَعْلَمُ بِالْمُهْتَدِينَ 
+            <span class="ayah-number">(7)</span>
+        </div>
+        <div class="translation">Mataan a so Kadnan ka na Skaniyan i lbi a Matao ko antawa onon i sominilay (mitharidadag) phoon ko lalan Rkaniyan, go Skaniyan i lbi a Matao ko miya ngatotoro (ko ontol).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:7" preload="none"
+                   data-surah="68"
+                   data-ayah="7"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:7')"
+                   onplay="highlightAyah('7')"
+                   onended="removeHighlight('7')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068007.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:7" onclick="togglePlay('68:7')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:7')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:7" value="0" max="100"
+         onchange="seekAudio('68:7', this.value)" style="width:200px;">
+  <span id="time-68:7" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:7" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:7', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(7)">Show Tafsir</button>
+            <button onclick="toggleFavorite(7)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(7)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '7',
+                                   'Mataan a so Kadnan ka na Skaniyan i lbi a Matao ko antawa onon i sominilay (mitharidadag) phoon ko lalan Rkaniyan, go Skaniyan i lbi a Matao ko miya ngatotoro (ko ontol).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-7" class="tafsir">Miyaaloy pn angkai a ayat sii ko kiyaposan ko Ayah 16:125 – ilaya ngka so osayan sangkoto a Ayah 16:125</div>
+        <div id="share-links-7" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-8">
+        <div class="quran-text">فَلَا تُطِعِ الْمُكَذِّبِينَ 
+            <span class="ayah-number">(8)</span>
+        </div>
+        <div class="translation">Na di ngka pagonoti so pphamanaplis.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:8" preload="none"
+                   data-surah="68"
+                   data-ayah="8"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:8')"
+                   onplay="highlightAyah('8')"
+                   onended="removeHighlight('8')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068008.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:8" onclick="togglePlay('68:8')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:8')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:8" value="0" max="100"
+         onchange="seekAudio('68:8', this.value)" style="width:200px;">
+  <span id="time-68:8" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:8" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:8', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(8)">Show Tafsir</button>
+            <button onclick="toggleFavorite(8)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(8)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '8',
+                                   'Na di ngka pagonoti so pphamanaplis.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-8" class="tafsir">Datarai so Ayah 25:52: (فَلَا تُطِعِ الْكَافِرِينَ وَجَاهِدْهُمْ بِهِ جِهَادًا كَبِيرًا) “Na di ngka pagonoti so mga kafir, go pranga ngka siran nggolalan rkaniyan (a Qur’an), sa kaphrang a mala”.  Datar pn o Ayah 33:48: (وَلَا تُطِعِ الْكَافِرِينَ وَالْمُنَافِقِينَ وَدَعْ أَذَاهُمْ وَتَوَكَّلْ عَلَى اللَّهِ وَكَفَى بِاللَّهِ وَكِيلًا) “Go di ngka pagonoti so mga kafir, go so mga monafik, go talikhodi ngka (pasin) so ringasa iran (sa kazaop ka), go zarakang ka ko Allah.  Go phakaampl so Allah a Sasarigan”.</div>
+        <div id="share-links-8" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-9">
+        <div class="quran-text">وَدُّوا لَوْ تُدْهِنُ فَيُدْهِنُونَ 
+            <span class="ayah-number">(9)</span>
+        </div>
+        <div class="translation">Mapangiindaw iran (hay Mohammad) a oba ka bo plokha, na plokha siran (mambo).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:9" preload="none"
+                   data-surah="68"
+                   data-ayah="9"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:9')"
+                   onplay="highlightAyah('9')"
+                   onended="removeHighlight('9')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068009.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:9" onclick="togglePlay('68:9')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:9')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:9" value="0" max="100"
+         onchange="seekAudio('68:9', this.value)" style="width:200px;">
+  <span id="time-68:9" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:9" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:9', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(9)">Show Tafsir</button>
+            <button onclick="toggleFavorite(9)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(9)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '9',
+                                   'Mapangiindaw iran (hay Mohammad) a oba ka bo plokha, na plokha siran (mambo).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-9" class="tafsir">Mapangiindaw iran a oba ngka siran bo plokhai sa pakambayaan ka siran ko agama iran na plokha angka iran mambo sa ringasa ago pakapmbaya angka iran ko agama ngka.  Datar anan so miyapanothol pn sa hadith a inampit iran a mga Quraish so Nabi a opama na: simbaan ami so agama ngka, hay Mohammad sa saragon, na simbaa ngka mambo so agama mi sa saragon, oba kalokalo ko kaipos oto na maisa tano ko agama ngka odi na sii tano maisa ko agama mi. Aya katimbl a maana angkai a ayat (a tig o Ibn Kathir) na katharo o mga da pamaratiyaya ko mga Quraish san ko Nabi a: “Ganati (pabayai) kami ngka dn ko kapzimba ami ko mga katuhanan ami, ka pabayaan ami ska mambo ko kipphanolonn ka ko agama ngka”.</div>
+        <div id="share-links-9" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-10">
+        <div class="quran-text">وَلَا تُطِعْ كُلَّ حَلَّافٍ مَّهِينٍ 
+            <span class="ayah-number">(10)</span>
+        </div>
+        <div class="translation">Go oba ngka onoti so oman i balisapaan, a bokhag (a da a okhad iyan)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:10" preload="none"
+                   data-surah="68"
+                   data-ayah="10"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:10')"
+                   onplay="highlightAyah('10')"
+                   onended="removeHighlight('10')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068010.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:10" onclick="togglePlay('68:10')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:10')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:10" value="0" max="100"
+         onchange="seekAudio('68:10', this.value)" style="width:200px;">
+  <span id="time-68:10" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:10" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:10', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(10)">Show Tafsir</button>
+            <button onclick="toggleFavorite(10)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(10)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '10',
+                                   'Go oba ngka onoti so oman i balisapaan, a bokhag (a da a okhad iyan)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-10" class="tafsir">Giya ngkai a Ayah 68:10 taman sangkaya a phamakatondog a mga ayat taman ko 68:13, na piyakarinayag on o Allah so mga olawla, dadabiatan a mga piyakasisingay o miyamangongkir (وَلَا تُطِعْ كُلَّ حَلَّافٍ مَهِينٍ، هَمَّازٍ مَشَّاءٍ بِنَمِيمٍ، مَنَّاعٍ لِلْخَيْرِ مُعْتَدٍ أَثِيمٍ، عُتُلٍّ بَعْدَ ذَلِكَ زَنِيمٍ) “Go oba ngka onoti so oman i (1) balisapaan (حَلَّافٍ), a (2) bokhag (a da a okhad iyan) (مَهِينٍ)- (3) Pamamaawing (ko katharo o mga taw) (هَمَّازٍ) a (4) andabo makaisokisok sa gii niyan kazoroyan (مَشَّاءٍ بِنَمِيمٍ)- (5) Pzapar ko mapiya (مَنَّاعٍ لِلْخَيْرِ), a (6) tamaba (مُعْتَدٍ), a (7) baradosa (أَثِيمٍ),- (8) Talibatak (عُتُلٍّ), oriyan oto na (9) da a matatangkd a ama iyan (زَنِيمٍ)”. Inoto (a tig o Ibn Kathir) pmbaloy so bokhag a sapaol?.  So bokhag, na sabap ko kiyalayami ron o mga taw sa lalayon iyan dn gii kapamokhag, na miyaphasa niyan a ginawa niyan ko mga taw.  Sa igira a adn a ptharoon iyan ko mga taw, na maggdam iyan a di iran phangimbnarn angkoto a ptharoon iyan, na mananapaan dn arap iyan sa kapangimbnara iran rkaniyan.</div>
+        <div id="share-links-10" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-11">
+        <div class="quran-text">هَمَّازٍ مَّشَّاءٍ بِنَمِيمٍ 
+            <span class="ayah-number">(11)</span>
+        </div>
+        <div class="translation">Pamamaawing (ko katharo o mga taw) a andabo makaisokisok sa gii niyan kapamaganta (kazoroyan)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:11" preload="none"
+                   data-surah="68"
+                   data-ayah="11"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:11')"
+                   onplay="highlightAyah('11')"
+                   onended="removeHighlight('11')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068011.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:11" onclick="togglePlay('68:11')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:11')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:11" value="0" max="100"
+         onchange="seekAudio('68:11', this.value)" style="width:200px;">
+  <span id="time-68:11" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:11" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:11', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(11)">Show Tafsir</button>
+            <button onclick="toggleFavorite(11)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(11)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '11',
+                                   'Pamamaawing (ko katharo o mga taw) a andabo makaisokisok sa gii niyan kapamaganta (kazoroyan)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-11" class="tafsir">Miyaaloy o Nabi sa hadith a: (لا يدخل الجنةَ قتَّاتٌ), isa a kinilapiatn on na (لا يَدْخُلُ الجَنَّةَ نَمَّامٌ).  Langon anan makapmamaana sa: “Da a phakasold ko sorga a taliyantaan”.  Isa pn a hadith mipantag ko kapamaganta na: “Ba akn rkano phanothola (a tigo Nabi) so mipantag ko mikharata rata rkano?  Siran oto so anda bo makaisokisok sa gii niyan kapamaganta, gii nggalbk sa gii kapakathotholaka o gii gii khakababayai ago so gii mbabanog sa pkhi ayb iyan ko mga taw a phiphiyapiya” (ألا أُخبِرُكم بشِرارِكم المشَّاؤونَ بالنَّميمةِ المُفسِدونَ بينَ الأحبَّةِ الباغونَ للبُرآءِ العيبَ) . (هَمَّازٍ مَشَّاءٍ بِنَمِيمٍ) “Pamamaawing (ko katharo o mga taw)” – makatolik san ko mga taw, na di niyan a daan a pagilayn so mga galbk iyan.  Giyoto so tig o mga loks a: “Ba dn matao mbayok ko paawing o pd iyan, na di matao ndarangn ko kalalalongan iyan”.  Datar anan so Ayah 104:1: (وَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍ) “Sangat a siksa (so wayl) a bagian o oman i pamamaawing a makasodi”.  Miyapanothol sa hadith a miyakaisa na adn a siyagadan o Nabi (ﷺ) a dowa a koba, na pitharo iyan a ‘’Mataan a giya ngkaya a dowa (a ikokobor sangkaya a dowa a koba) na pziksaan siran.  Go kna ba aya ipziksa kiran na ba mga ala a dosa (kabair): ka so isa kiran na di niyan ziyapn a lawas iyan ko (tarsik) o titi iyan igira a pthiti.  Giyoto pman a isa na gii niyan indalakaw ko mga taw a gii niyan kazoroyan (kapamaganta)”.</div>
+        <div id="share-links-11" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-12">
+        <div class="quran-text">مَّنَّاعٍ لِّلْخَيْرِ مُعْتَدٍ أَثِيمٍ 
+            <span class="ayah-number">(12)</span>
+        </div>
+        <div class="translation">Pzapar (phagrn) ko mapiya, a tamaba, a baradosa,</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:12" preload="none"
+                   data-surah="68"
+                   data-ayah="12"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:12')"
+                   onplay="highlightAyah('12')"
+                   onended="removeHighlight('12')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068012.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:12" onclick="togglePlay('68:12')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:12')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:12" value="0" max="100"
+         onchange="seekAudio('68:12', this.value)" style="width:200px;">
+  <span id="time-68:12" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:12" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:12', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(12)">Show Tafsir</button>
+            <button onclick="toggleFavorite(12)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(12)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '12',
+                                   'Pzapar (phagrn) ko mapiya, a tamaba, a baradosa,')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-12" class="tafsir">(مَنَّاعٍ لِلْخَيْرِ) “Pzapar (phagrn) ko mapiya” - phagrn ko mga pipiya: sii ko pirak na pphanapar ko kazisadka, pzogo ko kapligt, na sii so agama, na pphanapar ko mga simba a kapanonoatan ko Allah.</div>
+        <div id="share-links-12" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-13">
+        <div class="quran-text">عُتُلٍّ بَعْدَ ذَٰلِكَ زَنِيمٍ 
+            <span class="ayah-number">(13)</span>
+        </div>
+        <div class="translation">Talibatak, oriyan oto na (skaniyan na ‘zanim’) wata sa di kawing.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:13" preload="none"
+                   data-surah="68"
+                   data-ayah="13"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:13')"
+                   onplay="highlightAyah('13')"
+                   onended="removeHighlight('13')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068013.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:13" onclick="togglePlay('68:13')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:13')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:13" value="0" max="100"
+         onchange="seekAudio('68:13', this.value)" style="width:200px;">
+  <span id="time-68:13" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:13" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:13', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(13)">Show Tafsir</button>
+            <button onclick="toggleFavorite(13)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(13)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '13',
+                                   'Talibatak, oriyan oto na (skaniyan na ‘zanim’) wata sa di kawing.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-13" class="tafsir">Pitharo o Ibn 'Abbas a sii yai paka aantapa ko al-Walid bin al-Mughira, a da dn tarimaa o ama iyan i ba niyan wata inonta bo kagia misampay a idad iyan sa sapolo ago walo, ikadowa a miyapanothol na sii pakaaantapa ko Aswad bin Abdi Yaghuth ago ikatlo na so Akhnas bin Shurayq. Miyatharo o Nabi (ﷺ) sa hadith a inizaan iyan so mga sahaba a: “Ba akn rkano phanothola so pd ko mga taw ko sorga? – siran oto so mga lolobay, a khioomisn a igira a gii siran zamaya, na ipthman iran so mga samaya iran” (أَلَا أُنَبِّئُكُمْ بِأَهْلِ الْجَنَّةِ؟ كُلُّ ضَعِيفٍ مُتَضَعِّفٍ لَوْ أَقْسَمَ عَلَى اللهِ لَأَبَرَّهُ).  “Ba akn rkano pman phanothola (a tig o Nabi) so pd ko mga taw ko naraka? – siran oto so mga taw a mga talibatak, mga liligt a khipangi imporoan” (أَلَا أُنَبِّئُكُمْ بِأَهْلِ النَّارِ؟ كُلُّ عُتُلَ جَوَّاظٍ مُسْتَكْبِر). Isa a pn a inipmaana o mga pananafsir sangkoto a (عُتُلٍّ). na “tangangan, tanginom”, etc. Aya initafsir o Ibn Kathir sangkoto a (زَنِيمٍ), na taw a mananangga ko phagingd, kna ba kiran pd a mbabangsa, opama ka kambing na piyotolan sa tangila ka an katotoosi a di niyan kaapd ko kadaklan.  Maana a taw a tawantawan datar o kiniropaan on o Allah sii ko Ayah 74:11: (ذَرْنِي وَمَنْ خَلَقْتُ وَحِيدًا) “Botawani Ako ngka, ago so taw a inadn Akn a tawantawan!”.</div>
+        <div id="share-links-13" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-14">
+        <div class="quran-text">أَن كَانَ ذَا مَالٍ وَبَنِينَ 
+            <span class="ayah-number">(14)</span>
+        </div>
+        <div class="translation">Magigiyoto skaniyan (sangkoto a mga ropaan a miyaaloy), sabap sa miya baloy skaniyan a khirk ko tamok ago mga wata.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:14" preload="none"
+                   data-surah="68"
+                   data-ayah="14"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:14')"
+                   onplay="highlightAyah('14')"
+                   onended="removeHighlight('14')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068014.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:14" onclick="togglePlay('68:14')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:14')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:14" value="0" max="100"
+         onchange="seekAudio('68:14', this.value)" style="width:200px;">
+  <span id="time-68:14" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:14" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:14', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(14)">Show Tafsir</button>
+            <button onclick="toggleFavorite(14)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(14)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '14',
+                                   'Magigiyoto skaniyan (sangkoto a mga ropaan a miyaaloy), sabap sa miya baloy skaniyan a khirk ko tamok ago mga wata.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-14" class="tafsir">Ayah 68:13-14: (عُتُلٍّ بَعْدَ ذَلِكَ زَنِيمٍ، أَنْ كَانَ ذَا مَالٍ وَبَنِينَ) “Talibatak, oriyan oto na wata sa di kawing. - Magigiyoto skaniyan (sangkoto a mga ropaan a miyaaloy), sabap sa miyabaloy skaniyan a khirk ko tamok ago mga wata” - datar anan angkai a mga ayat: Ayah 74:11-16: (ذَرْنِي وَمَنْ خَلَقْتُ وَحِيدًا، وَجَعَلْتُ لَهُ مَالًا مَمْدُودًا، وَبَنِينَ شُهُودًا، وَمَهَّدْتُ لَهُ تَمْهِيدًا، ثُمَّ يَطْمَعُ أَنْ أَزِيدَ، كَلَّا إِنَّهُ كَانَ لِآيَاتِنَا عَنِيدًا) “Botawani Ako ngka, ago so taw a inadn Akn a tawantawan! - Go bigan Akn sa bagian iyan a tamok a madakl,- Go mga moriyataw a khipakamamasa,- Go (so kapag-oyagoyag na) piyakapangondaya Akn rkaniyan sa (samporna a) kapangondaya.- Oriyan iyan na maiinam iyan (pn) a kawmani Ko ron. - Di dn! (di dn pagomanan), ka mataan skaniyan na miyabaloy sii ko mga ayat Ami a zasangka!”.</div>
+        <div id="share-links-14" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-15">
+        <div class="quran-text">إِذَا تُتْلَىٰ عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ 
+            <span class="ayah-number">(15)</span>
+        </div>
+        <div class="translation">Igira a pphangadian rkaniyan so mga ayat Ami (so Qur’an), na tharoon iyan a: “mga kasoratan (a kabokhag) o mga inandang!”.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:15" preload="none"
+                   data-surah="68"
+                   data-ayah="15"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:15')"
+                   onplay="highlightAyah('15')"
+                   onended="removeHighlight('15')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068015.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:15" onclick="togglePlay('68:15')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:15')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:15" value="0" max="100"
+         onchange="seekAudio('68:15', this.value)" style="width:200px;">
+  <span id="time-68:15" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:15" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:15', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(15)">Show Tafsir</button>
+            <button onclick="toggleFavorite(15)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(15)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '15',
+                                   'Igira a pphangadian rkaniyan so mga ayat Ami (so Qur’an), na tharoon iyan a: “mga kasoratan (a kabokhag) o mga inandang!”.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-15" class="tafsir">Datar dnai so Ayah 83:13.  Ilaya ngka so osayan sangkanan a Ayah 83:13.</div>
+        <div id="share-links-15" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-16">
+        <div class="quran-text">سَنَسِمُهُ عَلَى الْخُرْطُومِ 
+            <span class="ayah-number">(16)</span>
+        </div>
+        <div class="translation">Toosan Ami dn skaniyan sa songay (ngirong)!</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:16" preload="none"
+                   data-surah="68"
+                   data-ayah="16"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:16')"
+                   onplay="highlightAyah('16')"
+                   onended="removeHighlight('16')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068016.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:16" onclick="togglePlay('68:16')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:16')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:16" value="0" max="100"
+         onchange="seekAudio('68:16', this.value)" style="width:200px;">
+  <span id="time-68:16" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:16" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:16', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(16)">Show Tafsir</button>
+            <button onclick="toggleFavorite(16)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(16)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '16',
+                                   'Toosan Ami dn skaniyan sa songay (ngirong)!')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-16" class="tafsir">Miyapanthol a sii ko kiyambonoay sa Badr na miyasapil a pdang a ngirong o al-Walid bin al-Mughira (Tafsir Jalalayn).</div>
+        <div id="share-links-16" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-17">
+        <div class="quran-text">إِنَّا بَلَوْنَاهُمْ كَمَا بَلَوْنَا أَصْحَابَ الْجَنَّةِ إِذْ أَقْسَمُوا لَيَصْرِمُنَّهَا مُصْبِحِينَ 
+            <span class="ayah-number">(17)</span>
+        </div>
+        <div class="translation">Mataan a Skami na tiniyoba Ami siran (a mga taw sa Makkah) lagid o kiyatiyoba Ami ko khimangark ko asinda (a tlo a magariyari), gowani a zapa siran sa mataan a phragonn iran dn skaniyan (a asinda iran) a phangabalaga siran.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:17" preload="none"
+                   data-surah="68"
+                   data-ayah="17"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:17')"
+                   onplay="highlightAyah('17')"
+                   onended="removeHighlight('17')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068017.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:17" onclick="togglePlay('68:17')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:17')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:17" value="0" max="100"
+         onchange="seekAudio('68:17', this.value)" style="width:200px;">
+  <span id="time-68:17" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:17" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:17', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(17)">Show Tafsir</button>
+            <button onclick="toggleFavorite(17)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(17)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '17',
+                                   'Mataan a Skami na tiniyoba Ami siran (a mga taw sa Makkah) lagid o kiyatiyoba Ami ko khimangark ko asinda (a tlo a magariyari), gowani a zapa siran sa mataan a phragonn iran dn skaniyan (a asinda iran) a phangabalaga siran.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-17" class="tafsir">(إِنَّا بَلَوْنَاهُمْ) “Mataan a Skami na tiniyoba Ami siran (a mga taw sa Makkah)” – aya tiyoba a pphanotholn sangkai a ayat a initiyoba ko mga taw sa Makkah na so kiyalaoni kiran sa da dn a oran ko miyakaphipira ragon, datar o kiyapanthola on so osayan ko Ayah 44:9-10. Antonaa i thotholan sangkoto a khimangark ko asinda?  Miyapanothol a sii yai miyanggolawla sa ingd a Darawan, sii sa Yemen.  Isa a miyapanothol na sii yai miyanggolawla sa ingd a Ethiopia (Khabasa) a aya mga taw ron na ‘people of the book’ (mga Christians) – miyanggolawla ko oriyan o kiyapaka ipos, kinipamanikn sa langit ko nabi iran a Eysa [Qurtubi].  Aya kiyapakagdgd o thothol na: adn a sakataw a mama a adn a asinda niyan na igira a miyaka ragon ko asinda niyan na pphammgay ron ko mga miskin – so pkharagon iyan na pmbagiin iyan sa tlo bagi: para ko familiya niyan, para ko mga miskin ago para ko gasto ko asinda ko kaphamolai ron zaroman ago so ipphamanokay ko mga gomagalbk on.  Ilay angka sangkai a phakatondog a Ayah 68:18 so sompat angkai a thothol.</div>
+        <div id="share-links-17" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-18">
+        <div class="quran-text">وَلَا يَسْتَثْنُونَ 
+            <span class="ayah-number">(18)</span>
+        </div>
+        <div class="translation">Go di siran phanabiya (da iran tharoa so insha Allah mampn piyakain’ngka siran o isa kiran)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:18" preload="none"
+                   data-surah="68"
+                   data-ayah="18"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:18')"
+                   onplay="highlightAyah('18')"
+                   onended="removeHighlight('18')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068018.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:18" onclick="togglePlay('68:18')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:18')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:18" value="0" max="100"
+         onchange="seekAudio('68:18', this.value)" style="width:200px;">
+  <span id="time-68:18" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:18" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:18', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(18)">Show Tafsir</button>
+            <button onclick="toggleFavorite(18)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(18)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '18',
+                                   'Go di siran phanabiya (da iran tharoa so insha Allah mampn piyakain’ngka siran o isa kiran)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-18" class="tafsir">Sii ko kiyawapat angkoto a mama a khirk ko asinda, na miyamagodasa so tlo a mga wata iyan a mga mama, sa pitharo o dowa on kataw (so kakakaka ago so ariari) a sabnar a malalalim o ama tano a ginawa niyan, sa gii niyan kambagibagia sa libri ko one-third ko pkhakosisa sangkai a asinda, sa kailangan (a tig iran) na mitarg anan.  Na somiyangka so isa sangkoito a tlo a magariari, sa tig iyan a babalowin anan o ama tano a gii niyan izasadka ka araparap iyan ko balas o Allah, na so kakhikinanglani niyan sangkoto a balas ko kaooyag oyag iyan pn nggolalan sangkanan a kazadka ko oman i pragonan sangkai a asinda, na lbi a kakhi kinanglani niyan on imanto sa kiyawapat iyan [Mazhari]. Ogaid na da kaayoni so kiyasangka iyan sa ba dn mimbaloy a paonot onot sangkoto a dowa a mga pagari niyan.  Sa kagiya a mawma so kaphrangona sangkoto a asinda, na pitharo angkoto a mga wata a: para kapalagoyan tano so mga miskin, na mangabalaga tano mragon, sa mapita ko kapitapita na mamanong tano sangkoto a asinda ka an tano di khailay o mga miskin.  Sa pitharo o isa kiran (so somiyangka ko di kambgi ko mga miskin) a “Insha Allah!”, taros a pitharo iyan sangkoto a dowa a mga pagari niyan a tharoa niyo so “Insha Allah” – ogaid, na initgo iran angkoto a pnggolawlaan iran mapita sa “Da siran dn panabiya” (وَلَا يَسْتَثْنُونَ) - da iran tharoa a 'insha Allah'. (وَلَا يَسْتَثْنُونَ) “Go di siran phanabiya” – adn ko mga pananafsir a aya initafsir iran sangkanan a ayat na “Go di siran dn phlambalamba (para ko mga miskin)”, opama na di siran dn pthakatakar na zakabn iran langon na da dn a phakapsikn iran on ko mga miskin.</div>
+        <div id="share-links-18" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-19">
+        <div class="quran-text">فَطَافَ عَلَيْهَا طَائِفٌ مِّن رَّبِّكَ وَهُمْ نَائِمُونَ 
+            <span class="ayah-number">(19)</span>
+        </div>
+        <div class="translation">Na liniyot (tiyanaan) skaniyan (a asinda) a bolyok (a ndo a sasartaan a apoy) a phoon ko Kadnan ka, a siran na khitotorogn siran.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:19" preload="none"
+                   data-surah="68"
+                   data-ayah="19"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:19')"
+                   onplay="highlightAyah('19')"
+                   onended="removeHighlight('19')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068019.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:19" onclick="togglePlay('68:19')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:19')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:19" value="0" max="100"
+         onchange="seekAudio('68:19', this.value)" style="width:200px;">
+  <span id="time-68:19" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:19" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:19', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(19)">Show Tafsir</button>
+            <button onclick="toggleFavorite(19)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(19)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '19',
+                                   'Na liniyot (tiyanaan) skaniyan (a asinda) a bolyok (a ndo a sasartaan a apoy) a phoon ko Kadnan ka, a siran na khitotorogn siran.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-19" class="tafsir">Sa miyamakatorog siran ka phangabalaga siran lomalakaw.  Aya di iran katawan, na sii sangkoto a gagawii na piyakatanaan o Allah sa tiyoba a katotong angkoto a asinda iran.</div>
+        <div id="share-links-19" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-20">
+        <div class="quran-text">فَأَصْبَحَتْ كَالصَّرِيمِ 
+            <span class="ayah-number">(20)</span>
+        </div>
+        <div class="translation">Na kiyapitaan (angkoto a asinda) a lagid o ‘sarim’ (so libotng o gagawii sabap ko  kiyapagombi ombi).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-68:20" preload="none"
+                   data-surah="68"
+                   data-ayah="20"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('68:20')"
+                   onplay="highlightAyah('20')"
+                   onended="removeHighlight('20')">
+                <source src="https://verses.quran.com/Alafasy/mp3/068020.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-68:20" onclick="togglePlay('68:20')">▶️ Play</button>
+            <button onclick="stopAudio('audio-68:20')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-68:20" value="0" max="100"
+         onchange="seekAudio('68:20', this.value)" style="width:200px;">
+  <span id="time-68:20" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-68:20" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('68:20', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(20)">Show Tafsir</button>
+            <button onclick="toggleFavorite(20)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(20)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('68',
+                                   '20',
+                                   'Na kiyapitaan (angkoto a asinda) a lagid o ‘sarim’ (so libotng o gagawii sabap ko  kiyapagombi ombi).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-20" class="tafsir">Tafsir not available</div>
+        <div id="share-links-20" class="share-links" style="display:none;"></div>
+    </div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <strong>1</strong><a href='https://maranaw.com/surah.php?surah=68&amp;page=2'>2</a><a href='https://maranaw.com/surah.php?surah=68&amp;page=3'>3</a><a href='https://maranaw.com/surah.php?surah=68&amp;page=3'>Last</a></div>
+
+</main>
+<hr>
+<footer class="site-footer">
+    <p style="text-align: center;">© 2025 Maranaw Tafsir by Abu Ahmad Tamano. | Site developed by Ashary Tamano. | All rights reserved.</p>
+</footer>
+
+<!-- Scroll to Top -->
+<button onclick="scrollToTop()" id="scrollBtn" style="display:none;position:fixed;bottom:40px;right:30px;z-index:99;font-size:18px;border:none;outline:none;background-color:#000;color:white;cursor:pointer;padding:15px;border-radius:50%;">⬆</button>
+
+<script>
+
+// Restore saved reciter on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const savedReciter = localStorage.getItem("selectedReciter");
+  if (savedReciter) {
+    document.getElementById("reciter").value = savedReciter;
+    changeReciter(savedReciter);
+  }
+});
+
+// Scroll-to-top
+let scrollBtn = document.getElementById("scrollBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) scrollBtn.style.display = "block";
+    else scrollBtn.style.display = "none";
+};
+function scrollToTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
+
+// 3-toggle buttons
+const btnArabic = document.getElementById("btn-arabic");
+const btnMaranao = document.getElementById("btn-maranao");
+const btnBoth = document.getElementById("btn-both");
+
+btnArabic.addEventListener('click', () => { setView('arabic'); setActive(btnArabic); });
+btnMaranao.addEventListener('click', () => { setView('maranao'); setActive(btnMaranao); });
+btnBoth.addEventListener('click', () => { setView('both'); setActive(btnBoth); });
+
+function setView(view){
+    const arabicTexts = document.querySelectorAll(".quran-text");
+    const maranaoTexts = document.querySelectorAll(".translation");
+    if(view==='arabic'){
+        arabicTexts.forEach(t=>t.style.display='block');
+        maranaoTexts.forEach(t=>t.style.display='none');
+    } else if(view==='maranao'){
+        arabicTexts.forEach(t=>t.style.display='none');
+        maranaoTexts.forEach(t=>t.style.display='block');
+    } else {
+        arabicTexts.forEach(t=>t.style.display='block');
+        maranaoTexts.forEach(t=>t.style.display='block');
+    }
+}
+function setActive(btn){
+    [btnArabic, btnMaranao, btnBoth].forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+}
+setView('both');
+
+// -------------------- Enhanced Audio Functions --------------------
+let currentAudio = null;
+
+function togglePlay(key) {
+  const audio = document.getElementById("audio-" + key);
+  const btn = document.getElementById("btn-play-" + key);
+
+  if (audio.paused) {
+    if (currentAudio && currentAudio !== audio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      const oldKey = currentAudio.getAttribute("data-surah") + ":" + currentAudio.getAttribute("data-ayah");
+      document.getElementById("btn-play-" + oldKey).innerText = "▶️ Play";
+      removeHighlight(currentAudio.getAttribute("data-ayah"));
+    }
+    audio.play();
+    currentAudio = audio;
+    btn.innerText = "⏸ Pause";
+  } else {
+    audio.pause();
+    btn.innerText = "▶️ Play";
+  }
+}
+
+function stopAudio(id) {
+  const audio = document.getElementById(id);
+  const ayah = audio.getAttribute("data-ayah");
+  audio.pause();
+  audio.currentTime = 0;
+  document.getElementById("btn-play-" + audio.getAttribute("data-surah") + ":" + ayah).innerText = "▶️ Play";
+  removeHighlight(ayah);
+}
+
+function updateProgress(key) {
+  const audio = document.getElementById("audio-" + key);
+  const progress = document.getElementById("progress-" + key);
+  const timeLabel = document.getElementById("time-" + key);
+
+  if (audio.duration) {
+    progress.value = (audio.currentTime / audio.duration) * 100;
+
+    // Format time
+    const cur = formatTime(audio.currentTime);
+    const dur = formatTime(audio.duration);
+    timeLabel.innerText = `${cur} / ${dur}`;
+  }
+}
+
+function formatTime(sec) {
+  const minutes = Math.floor(sec / 60) || 0;
+  const seconds = Math.floor(sec % 60) || 0;
+  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+}
+
+function seekAudio(key, value) {
+  const audio = document.getElementById("audio-" + key);
+  if (audio.duration) {
+    audio.currentTime = (value / 100) * audio.duration;
+  }
+}
+
+function setVolume(key, value) {
+  const audio = document.getElementById("audio-" + key);
+  audio.volume = value;
+}
+
+function highlightAyah(ayah) {
+  const block = document.getElementById("ayah-" + ayah);
+  block.classList.add("playing");
+
+  // Auto-scroll only if toggle is ON
+  const autoScroll = document.getElementById("autoScrollToggle").checked;
+  if (autoScroll) {
+    setTimeout(() => {
+      block.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 150); // 150ms delay to feel natural
+  }
+}
+
+function removeHighlight(ayah) {
+  document.getElementById("ayah-" + ayah).classList.remove("playing");
+}
+
+// Continuous play
+document.querySelectorAll("audio").forEach((audio, index, list) => {
+  audio.onended = function() {
+    const continuousPlay = document.getElementById("continuousPlayToggle").checked;
+    removeHighlight(audio.getAttribute("data-ayah"));
+    if (continuousPlay) {
+      let next = list[index + 1];
+      if (next) {
+        const nextKey = next.getAttribute("data-surah") + ":" + next.getAttribute("data-ayah");
+        togglePlay(nextKey);
+      }
+    }
+  };
+});
+
+// Change reciter dynamically
+function changeReciter(reciter) {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio = null;
+  }
+
+  // Save chosen reciter
+  localStorage.setItem("selectedReciter", reciter);
+
+  document.querySelectorAll("audio").forEach(audio => {
+    let surah = audio.getAttribute("data-surah").padStart(3, "0");
+    let ayah = audio.getAttribute("data-ayah").padStart(3, "0");
+    let newUrl = "";
+
+    if (reciter === "Alafasy") {
+      newUrl = `https://verses.quran.com/Alafasy/mp3/${surah}${ayah}.mp3`;
+    } else if (reciter === "Sudais") {
+      newUrl = `https://verses.quran.com/Sudais/mp3/${surah}${ayah}.mp3`;
+    } else if (reciter === "Ghamdi") {
+      newUrl = `https://everyayah.com/data/Ghamadi_40kbps/${surah}${ayah}.mp3`;
+    } else if (reciter === "Rifai") {
+      newUrl = `https://everyayah.com/data/Hani_Rifai_192kbps/${surah}${ayah}.mp3`;
+    }
+
+    audio.querySelector("source").src = newUrl;
+    audio.setAttribute("data-reciter", reciter);
+    audio.load();
+  });
+}
+
+// -------------------- Existing Functions --------------------
+function toggleTafsir(id) {
+    const tafsirDiv = document.getElementById("tafsir-" + id);
+    const button = tafsirDiv.previousElementSibling.querySelector("button");
+
+    if (tafsirDiv.style.display === "none" || tafsirDiv.style.display === "") {
+        tafsirDiv.style.display = "block";
+        button.innerText = "Hide Tafsir";
+    } else {
+        tafsirDiv.style.display = "none";
+        button.innerText = "Show Tafsir";
+    }
+}
+
+function toggleFavorite(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "68. Al-Qalam (القَلَم) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+
+    let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const exists = favorites.find(f => f.surah === surah && f.quran === quran);
+
+    if (exists) {
+        favorites = favorites.filter(f => !(f.surah === surah && f.quran === quran));
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        alert("Removed from Favorites");
+    } else {
+        favorites.push({ id, surah, quran, translation });
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        alert("Added to Favorites.\n\nClick 🖤 View Favorites above to see your saved ayahs.");
+    }
+}
+
+function copyAyah(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "68. Al-Qalam (القَلَم) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+    const tafsir = document.getElementById("tafsir-" + id).innerText;
+
+    const text = surah + "\n" + quran + "\n" + translation + "\n" + tafsir;
+    navigator.clipboard.writeText(text);
+    alert("Copied to clipboard");
+}
+
+function shareAyah(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "68. Al-Qalam (القَلَم) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+
+    const text = surah + "\n" + quran + "\n" + translation;
+
+    if (navigator.share) {
+        navigator.share({ text })
+            .then(() => console.log("Shared successfully"))
+            .catch(err => console.error("Error sharing:", err));
+    } else {
+        const shareLinks = document.getElementById("share-links-" + id);
+        const encoded = encodeURIComponent(text);
+        shareLinks.innerHTML = `
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encoded}" target="_blank">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text=${encoded}" target="_blank">X</a>
+            <a href="https://wa.me/?text=${encoded}" target="_blank">WhatsApp</a>
+        `;
+        shareLinks.style.display = "block";
+    }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from maranaw.com/surah.php?surah=68 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:53 GMT -->
+</html>
+

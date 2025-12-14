@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from maranaw.com/myquran/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:46 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>myQur'an – Download Center</title>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="myQur'an – Download Center">
+<meta property="og:description" content="Arabic text with Maranao, Tagalog, Bisaya, and English. Select reciters; play an ayah or full surah; offline-first; no trackers.">
+<meta property="og:image" content="images/logo_512.png">
+<meta property="og:url" content="index.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/logo_32.png">
+<link rel="apple-touch-icon" href="images/logo_128.png">
+
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#003231;color:#f4f7f6}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px}
+  .hero{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .logo{width:110px;height:110px;border-radius:20px;background:#0f4644;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #175}
+  .logo img{width:100%;height:100%;object-fit:cover}
+  h1{margin:0 0 6px}
+  .muted{color:#cdd5d4}
+  .btn{display:inline-block;background:#ffb703;color:#111;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+  .btn:hover{filter:brightness(0.95)}
+  section{margin:28px 0;border-top:1px solid #175;border-bottom:1px solid #175;padding:18px 0}
+  h2{margin:0 0 12px}
+  code{background:#0d3f3d;border:1px solid #175;padding:2px 6px;border-radius:6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .shots figure{margin:0}
+  .shots img{width:100%;height:auto;border-radius:12px;border:1px solid #175;display:block}
+  .shots figcaption{font-size:12px;color:#a9b7b6;margin-top:6px}
+  small{color:#a9b7b6}
+  .qrbox{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:8px}
+  .qrbox img{border-radius:12px;border:1px solid #175}
+  form.feedback{display:grid;gap:10px;max-width:560px}
+  form.feedback input, form.feedback textarea, form.feedback select{
+    border-radius:8px;border:1px solid #175;background:#0d3f3d;color:#f4f7f6;padding:10px;font:inherit
+  }
+  .pill{display:inline-block;background:#0d3f3d;border:1px solid #175;border-radius:999px;padding:4px 10px;margin-right:6px}
+</style>
+
+<script>
+async function loadRelease(){
+  const res = await fetch('releases/releases.json',{cache:'no-store'});
+  const j = await res.json();
+
+  document.getElementById('ver').textContent = j.latest.versionName+' (code '+j.latest.versionCode+')';
+  document.getElementById('pub').textContent = j.latest.date || '';
+  document.getElementById('sha').textContent = j.latest.sha256;
+
+  // use the direct URL from JSON
+  const dlUrl = j.latest.url;
+  document.getElementById('dl').href = dlUrl;
+
+  // also update the QR to that exact URL
+  const qr = document.getElementById('qr');
+  const qrApi = 'https://quickchart.io/qr?size=180&margin=2&text=' + encodeURIComponent(dlUrl);
+  qr.src = qrApi;
+}
+document.addEventListener('DOMContentLoaded', loadRelease);
+</script>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="logo">
+      <img src="images/logo_256.png" alt="myQur'an logo" width="110" height="110">
+    </div>
+    <div>
+      <h1>myQur'an</h1>
+      <div class="muted">Arabic text with Maranao, Tagalog, Bisaya, and English translations.</div>
+      <div class="muted">Version: <span id="ver">—</span> • Published: <span id="pub">—</span></div>
+      <p><a id="dl" class="btn" href="#">Download APK</a></p>
+      <div class="qrbox">
+        <img id="qr" src="#" alt="QR code to download" width="180" height="180" loading="lazy">
+        <small>Scan to download on your phone</small>
+      </div>
+      <small>SHA-256: <code id="sha">loading…</code></small>
+    </div>
+  </div>
+
+  <section>
+    <h2>About this App</h2>
+    <div class="grid">
+      <div>
+        <p><strong>App Name:</strong> myQur'an</p>
+        <p><strong>Short Description:</strong> Arabic text with Maranao, Tagalog, Bisaya, and English translations.</p>
+        <p><strong>Long Description:</strong> myQur’an is an ad-free Qur’an reader. It presents the Arabic Uthmani script alongside Maranao, Tagalog, Bisaya, and English translations. Choose your preferred reciter and play a single ayah or an entire surah. Clear typography, dark mode, search, bookmarks, and reliable offline access. No sign-ups, no trackers—just reading. Forever free, fi sabeelillah!</p>
+        <p><strong>App Developer:</strong> Ashary S. Tamano</p>
+        <p><strong>Platform:</strong> Android</p>
+        <p><strong>Package:</strong> <code>com.asharytamano.myquran</code></p>
+        <p><strong>Privacy:</strong> <a href="../../asharytamano.github.io/myQuran/privacy-policy.html">Privacy Policy</a></p>
+      </div>
+      <div>
+        <h3>Features</h3>
+        <ul>
+          <li>Arabic Uthmani + Maranao, Tagalog, Bisaya, English</li>
+          <li>Select reciters; play ayah or full surah</li>
+          <li>Offline-first, bookmarks, search, dark mode</li>
+          <li>No sign-ups, no trackers</li>
+        </ul>
+        <h3>Ratings & Reviews</h3>
+        <p><small>Leave your feedback below. Your comments help us improve.</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <figure><img src="images/01-Splash-Page.jpg" alt="Splash Page" loading="lazy"><figcaption>Splash Page</figcaption></figure>
+      <figure><img src="images/02-Landing-Page.jpg" alt="Landing Page" loading="lazy"><figcaption>Landing Page</figcaption></figure>
+      <figure><img src="images/03-Surah-List.jpg" alt="Surah List" loading="lazy"><figcaption>Surah List</figcaption></figure>
+      <figure><img src="images/04-Playing-an-Ayah.jpg" alt="Playing an Ayah" loading="lazy"><figcaption>Playing an Ayah</figcaption></figure>
+      <figure><img src="images/05-Bookmarks.jpg" alt="Bookmarks" loading="lazy"><figcaption>Bookmarks</figcaption></figure>
+      <figure><img src="images/06-Reciters-and-Audio.jpg" alt="Reciters and Audio" loading="lazy"><figcaption>Reciters & Audio</figcaption></figure>
+      <figure><img src="images/07-Help-and-How-to-Use.jpg" alt="Help and How to Use" loading="lazy"><figcaption>Help & How to Use</figcaption></figure>
+      <figure><img src="images/08-About-this-App.jpg" alt="About this App" loading="lazy"><figcaption>About this App</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to Install</h2>
+    <ol>
+      <li>Download the APK, then open it from Downloads.</li>
+      <li>If prompted, allow your browser or file manager to install unknown apps.</li>
+      <li>Tap Install. Open the app and enjoy offline reading.</li>
+    </ol>
+    <p><small>Android 14+: Settings → Security & privacy → More security settings → Install unknown apps.</small></p>
+  </section>
+
+  <section>
+    <h2>Changelog</h2>
+    <div id="changelog"><small>Loading…</small></div>
+  </section>
+
+  <section>
+    <h2>Feedback / Reviews</h2>
+    <form class="feedback" method="post" action="https://maranaw.com/myquran/feedback/submit.php">
+      <input type="text" name="name" placeholder="Your name (optional)">
+      <input type="email" name="email" placeholder="Your email (optional)">
+      <select name="rating" aria-label="Rating">
+        <option value="">Rating (optional)</option>
+        <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Your feedback (bugs, suggestions, thanks)"></textarea>
+      <button class="btn" type="submit">Submit Feedback</button>
+      <small>By submitting, you agree that your comment may be reviewed and used to improve the app. We don’t sell or share emails.</small>
+    </form>
+  </section>
+</div>
+
+<!-- JSON-LD for SEO -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"myQur'an","operatingSystem":"Android","applicationCategory":"EducationApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://maranaw.com/myquran/download/?v=latest"}
+</script>
+</body>
+
+<!-- Mirrored from maranaw.com/myquran/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:52 GMT -->
+</html>

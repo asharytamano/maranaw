@@ -1,0 +1,1446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from maranaw.com/surah.php?surah=23 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<title>Surah 23 - Maranaw Tafsir</title>
+<link rel="stylesheet" href="style.html">
+<link rel="stylesheet" href="surah.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="../fonts.googleapis.com/css2f281.css?family=Scheherazade+New&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maranao Tafsir</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Logo styles */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 64px;  /* default desktop size */
+    height: 64px;
+    margin-right: 10px;
+}
+
+/* Navigation styles */
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+.main-nav a:hover {
+    color: #ccc;
+}
+
+/* Horizontal rule */
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 64px;   /* smaller logo on mobile */
+        height: 64px;
+        margin-right: 8px;
+    }
+
+    .main-nav {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<!-- Open Graph (Facebook, Messenger, LinkedIn) -->
+<meta property="og:title" content="Maranao Tafsir – Tafsir sa Basa Maranao">
+<meta property="og:description" content="Official Maranao Tafsir resource online – rooted in the work of Engr. Abdulbasit Tamano.">
+<meta property="og:image" content="https://tafsir.maranaw.com/images/og-image.jpg">
+<meta property="og:url" content="https://tafsir.maranaw.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maranao Tafsir – Tafsir sa Basa Maranao">
+<meta name="twitter:description" content="Official Maranao Tafsir resource online – rooted in the work of Engr. Abdulbasit Tamano.">
+<meta name="twitter:image" content="https://tafsir.maranaw.com/images/og-image.jpg">
+<meta name="twitter:site" content="@YourHandle"> <!-- optional -->
+
+<div class="header-inner">
+    <div class="logo">
+        <a href="index-2.html">
+            <img src="images/logo-64x64.png" alt="Maranao Tafsir Logo">
+            Maranao Tafsir
+        </a>
+    </div>
+    <nav class="main-nav">
+        <a href="index-2.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Surah Index</a>
+        <a href="contact.html">Contact</a>
+        <a href="search.html">Search</a>
+        <a href="../drive.google.com/file/d/1lV7Fz8tb_4Bj7Zao1-uzdRH_OsSxm0KV/view.html">Get PDF</a>
+        <a href="https://maranaw.com/myquran" target="_blank">Get Mobile App</a>
+    </nav>
+</div>
+
+</header>
+<hr>
+<hr>
+
+<main class="site-content">
+
+<div class="surah-title">
+    23. Al-Mu&#039;minun |     <span class="arabic">المُؤْمِنُون</span>
+</div>
+
+<!-- 3 Toggle Buttons + Reciter Selector + Switches -->
+<div class="sticky-controls">
+  <div class="toggle-group">
+      <button id="btn-arabic">Arabic Only</button>
+      <button id="btn-maranao">Maranao Only</button>
+      <button id="btn-both" class="active">Arabic + Maranao</button>
+  </div>
+
+  <!-- Reciter Selector -->
+<div style="text-align:center; margin-top:10px;">
+    <label for="reciter" style="font-weight:bold;">Reciter: </label>
+    <select id="reciter" onchange="changeReciter(this.value)">
+        <option value="Alafasy" selected>Mishary Rashid Al-Afasy</option>
+        <option value="Sudais">Abdul Rahman Al-Sudais</option>
+        <option value="Ghamdi">Saad al-Ghamdi (40kbps)</option>
+        <option value="Rifai">Hani ar-Rifai (192kbps)</option>
+    </select>
+</div>
+
+  <!-- Auto-scroll toggle -->
+<div class="toggles-row">
+  <label class="switch">
+    <input type="checkbox" id="autoScrollToggle" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="toggle-label">🔄 Auto-scroll</span>
+
+  <label class="switch" style="margin-left:20px;">
+    <input type="checkbox" id="continuousPlayToggle" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="toggle-label">▶️ Continuous Play</span>
+</div>
+
+  <!-- View Favorites link -->
+  <div style="text-align:center; margin-top:10px;">
+      <a href="favorites.html" style="font-size:14px; color:#0066cc; text-decoration:none;">
+          <strong>🖤 VIEW FAVORITES</strong>
+      </a>
+  </div>
+</div>
+
+<!-- Bismillah -->
+    <div class="ayah-block bismillah-block">
+        <div class="quran-text">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+    </div>
+
+<!-- Ayahs -->
+        <div class="ayah-block" id="ayah-1">
+        <div class="quran-text">قَدْ أَفْلَحَ الْمُؤْمِنُونَ 
+            <span class="ayah-number">(1)</span>
+        </div>
+        <div class="translation">Sabnar a miyakadaag (miyagontong) so mga moomin.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:1" preload="none"
+                   data-surah="23"
+                   data-ayah="1"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:1')"
+                   onplay="highlightAyah('1')"
+                   onended="removeHighlight('1')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023001.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:1" onclick="togglePlay('23:1')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:1')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:1" value="0" max="100"
+         onchange="seekAudio('23:1', this.value)" style="width:200px;">
+  <span id="time-23:1" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:1" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:1', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(1)">Show Tafsir</button>
+            <button onclick="toggleFavorite(1)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(1)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '1',
+                                   'Sabnar a miyakadaag (miyagontong) so mga moomin.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-1" class="tafsir">Giya ngkai a Surah, na Surah Makkiyah, maana a sii initoron sa Makkah ko da pn katogalin o Nabi (ﷺ) sa Madina. Ipoon sangkai a Ayah 23:1 taman ko Ayah 23:10 na inaloy sii so pd ko mga ropaan o mga moomin (moominun), a so datar o kiniropaan kiran ko Surah Al-Ma'aarij, Ayah 70:19-35. Antonaa i kapakadaag, kapagontong (success)?  Aya ropaan o tarotop o kapakadaag (kapagontong, success) na so kaparoliya ko langowa mazizingayo (all desires) ago so katatap angkoto a success nggolalan ko kapakalidas ko langowa di mapiya a ontong (misfortunes) – giyanan i tarotop ago sindadan o kapakadaag (kapagontong).  Ogaid, na langowa kapakadaag (success) ko donya (materially) na temporary (di thatas): odi ka ganati angkoto a success sii ko kaoyag oyag ka ko donya, na ska i ngganat on ko kawapat ka.  Sii ko donya na di ron khaparoli angkoto a tarotop a kapakadaag, dapiya pn so mga mamgs a mga datu (kings) ago so mga kawasa mangawasa a mga taw – di dn lomilintad a mokarna iran ka di kiran dn maada angkoto a kalk ko kada o kadato odi na kada o kakakawasaan, od na so kapakatana o tiyoba (disaster). Giya ngkoto a tarotop a kapakadaag na sii bo oto khaparoli sii ko ingd a bithowan sa sorga!  Pitharo o Allah a “Sa taw a sabtn phoon ko naraka, go isold ko sorga na sabnar a miyagontong” (فَمَنْ زُحْزِحَ عَنِ النَّارِ وَأُدْخِلَ الْجَنَّةَ فَقَدْ فَازَ) sabap sa “da so kawyagoyag ko doniya, inonta na matag sagad a kabimbanan a phakalimpang” (وَمَا الْحَيَاةُ الدُّنْيَا إِلَّا مَتَاعُ الْغُرُورِ) Ayah 3:185.  Sii sangkoto a ingd (a sorga) na “mapmbagian iran (roo) so nganin a phangnin iran” (وَلَهُم مَّا يَدَّعُونَ) Ayah 36:57. Antonaa onon i ropaan angkoto a miyaaloy a mga ’moominun’ (الْمُؤْمِنُونَ)?  Siran angkai so mga taw a miyazipat iran angkai a pito a mga sipat (7 attributes) a pagalowin ago iniropa sangkai a Ayah 23:2 taman ko Ayah 23:10.</div>
+        <div id="share-links-1" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-2">
+        <div class="quran-text">الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ 
+            <span class="ayah-number">(2)</span>
+        </div>
+        <div class="translation">So siran sii ko (sold o) mga sambayang iran na mga tolabos (khimanga-alkn).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:2" preload="none"
+                   data-surah="23"
+                   data-ayah="2"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:2')"
+                   onplay="highlightAyah('2')"
+                   onended="removeHighlight('2')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023002.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:2" onclick="togglePlay('23:2')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:2')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:2" value="0" max="100"
+         onchange="seekAudio('23:2', this.value)" style="width:200px;">
+  <span id="time-23:2" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:2" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:2', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(2)">Show Tafsir</button>
+            <button onclick="toggleFavorite(2)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(2)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '2',
+                                   'So siran sii ko (sold o) mga sambayang iran na mga tolabos (khimanga-alkn).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-2" class="tafsir">Paganay(1) a ropaan angkoto a mga ’moominun’ (الْمُؤْمِنُونَ) a miyamaka daag a miyaaloy sangkoto a miyaipos a Ayah 23:1 na: siran so khimanga-alkn, tolabos sii ko Allah igira a ititindg iran so sambayang.  Giya ngkai a Ayah 23:2na mipndatarai angkai a phakatondog a Ayah 23:9 ago so Ayah 70:34 (وَالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ) “Go so siran na so (mga) sambayang iran na sisiyapn iran (sii ko paganay a mga wakto iyan)”. Antonaa i (خُشُوعْ) ‘khoshoo’ (katholabos) ko sambayang? Pitharo o Ibn ‘Abbas a aya (خُشُوعْ) ‘khoshoo’ ko sambayang na so katago o kalk sii ko poso ago so karrnk o mga anggawta, makasabap ko kathatakna o pamikiran sa kinda darpain o manosia ko kadnan iyan (mampn di niyan Oto pkhaylay), sa da a madakl (extra) a khakhaokaog ko kazambayang a makaliyokiyo ko mga gowagoway, mga piil o sambayang inonta bo o kinanglan dn a tanto so kapaka khaokaog sa salakaw. Antonaa i isa a khaylayan sa katatago o ‘khoshoo’ (خُشُوعْ) sii ko gii zambayang?  Isa a khaylayan roo na so kababaloy o taw a ibababa iyan so kaylay niyan sii ko kititindgn iyan ko sambayang, sa kna a ba pphamangilaylay sa poro odi na ba pphamanirisiri sa kawanan diwang, aya pn i ba ndingil. Antonaa i khaylayan sa kaada o ‘khoshoo’ (خُشُوعْ) sii ko gii zambayang?  Pd sa mga pkhailayan sa kaada ‘khoshoo’ na so kazambayang ko ropaan a tanto a kanggagaan, so di kaphananggilai o taw ko kakhaokaog sa sobra, datar o kaphlolosa o taw ko barokan o nditarn iyan, kaphangongokotan iyan sa madakl, etc.  Miyapanothol a adn a isa a taw a gii zambayang a gii niyan nggitagitaan, pphamagipon ipon a sompa iyan, na tig o Nabi (ﷺ) a ‘opama ka adn a khoshoo’ sa gii kazambayang i aki aya, na mapakarinayag dn o lawas (mga anggawta) iyan’. Antonaa i kaiimportanti o ‘khoshoo' sii ko sambayang?  Sii ko Imam Ghazzali, so Qurtubi ago adn pn a mga pd na sii siran ko panarima sa so khoshoo' na patoray ago so sambayang a di ron maaadn so khoshoo' na da mibilang i ba miyanggalbk.  Ogaid na adn a mga ulama a mapaparatiyaya sa di kapthindgan (a tig iran) i ba so di kaaadn o ‘khoshoo’ ko sambayang na ba miyakhinanglan so kakasoya ko sambayang.  Pd sa kaiimportanti o khoshoo' na miyaaloy sa Hadith a pitharo o Nabi (ﷺ) a: “Aya pagampaganay a khapnas sangkai a Ummah na so khoshoo', taman sa khaoma so oras a da dn a sakataw bo a khalamba a gii nggalbk ko khoshoo'“ Antonaa i mga rarad o kalalalayon o ‘khoshoo'?  Isa a rarad o kalalalayon o khoshoo' ko sambayang na pkhabaloy niyan so taw a manganga limbabaan, ago mapphakawatan iyan skaniyan ko kathakabor.  Giya ngkoto a rarad a kapangalim babaan na sii sa poso, kna ba mbaloya o taw a ginawa niyan a malobay sabap ko ‘khoshoo’.  Miyakaysa na miyailay o Omar Ibn Khattab a mangoda a phlalakaw sa badn mappko sa katotolong iyan, na tig o Omar a: ‘Hay poroon ka a olo ngka, ka so khusu’ na sii ko rarb (poso)’.  So mga salaf na adn a bithowan iran sa ‘khoshoo' anNifaq’ (خُشُوع النِّفَاق) opama na ‘katholabos (khoshoo') a kamomonafiki’ – skaniyan so khoshoo' a pphakiilay o anggawta odi na lawas a kna ba makaphapasod ko poso.  Datar oto so kapthago o sabaad a mga taw, sa maito a ator ko didalm o sambayanga a pzojyodan iran sa saman iran on bo di imbambal a bn’ng iran igira a sojyod siran on, pantag bo oto sa niat iran (tabiya) sa kaadn o pon’ng sa bn’ng iran ka an matharo a mithanda sa bn’ng iran so mga kapphanambyang iyan zabnar ko mga kagagawii (qiyamul layl) – ilidas tano roo o Allah. Pd pn sa mga thotholan ko ‘khoshoo' o mga sahaba, na miyapanothol a so Urwat Ibn Zobair, na miyakagdam sa sakit a aya bo a bolong iyan na photoln on a parapara niyan na kagiya a phaki inom on a bolong a thorogn on para di niyan magdam a kaphotoli ron, na siyangka iyan oto sa pitharo iyan kiran a di dn anan kinanglan, ka amay ka zisii skaniyan sa sambayang, na potola iran dn i photoln iran sa lawas iyan ka di niyan dn oto khagdam, sabap ko kattmbang, katotolabos iyan ko sambayang. Andamanaya i kakhabaloy tano a matatatap sii ko khoshoo', katotolabos ko mga sambayang tano?  Madakl!, na maloy tano ron sii sa khapira timan – aya onayan a kakha paroliya ko khoshoo' na sii makambbkn ko okit a gii kazambayang o Nabi (ﷺ) ka giyoto i kiyatimblan ko kakhabaloy o sambayang o taw a tolabos, datar o kiyatharoa niyan on sa “Zambayang kano sa datar dn o kiyailaya niyo rakn a gii ako zambayang” (صلوا كما رأيتموني أصلي).  Paganay(1) ron na so nganin a khapakay a makasarani ko gii kazambayang o taw, na iposn niyan dn a daan ko da niyan pn kaphoon zambayang, datar o kaphakasong iyan sa ig (katiti kaodo) odi na pkhaor, na ba niyan dn kiyaganatan so pangn’ngkn, etc., sa tomo a iposa niyan a daan so kakan.  Ikadowa(2) na so kapalagowi ko mga pagigimo, mga toladan (paintings), mga kasoratan (writings), a matatago ko klb (walls) a kasasangoran sii ko gii kazambayang, odi na sii ko mga likod (nditarn) o mga taw, ka sabnar a pphakasarani oto ko khoshoo' o gii zambayang.  Ikatlo(3) na so mga sowara a pphakapoon ko mbalabala, datar o mga ‘ring tones’ o mga cellpone, sa ipakawatan pasin so mga cellpone odi na balowin a ‘turned OFF’ odi na ‘in a SILENT Mode’, etc., para di pphakasarani ko gii zasambayang igira a miyag ring.  Aya ikapat(4) ago aya lbi a mala a pphakabgay sa khoshoo' ko taw na so kapakadarpaa o taw sa pamikiran iyan sa sabnar a zisii ko kasasangoran iyan so datu o langowa datu (King of the kings – مَلِكِ المُلُوك) a so miyangadn a aya bo pphakabgay ko nganin a makhikinanglan o manosia.  Miyaaloy sa Hadith a pitharo o Nabi (ﷺ) a: “So Allah na tatandingan Iyan sa kailay so oripn Iyan sii ko gii niyan kazambayang taman sa kababaloy o ‘concentration’ (kathotolabos) o taw a sii bo ko Allah.  Sa anda dn i kabaloy o ‘concentration’ (kathotolabos) iyan ago so kaylay niyan a mibibay sa salakaw, na ibibay mambo o Allah phoon rkaniyan so kaylay”.  Aya ikalima(5) na so kabaloya o taw ko kailay niyan a domkt ko darpa a pkhabtadan ko pzojyodan iyan ko diya ngka a kna ba skaniyan pman makakokoong, kna ba skaniyan mappko, maana a so paras na maka mbabantang, sabap sa so katindg a STRAIGHT ko kapmbatiyaa ko Fatiha ago sakb ago ko kapakambangonan phoon ko roko na pd oto ko rokon o sambayang.  Ikanm(6) a phakabgay sa khoshoo' na so kabaloy o mga gowagoway ko katogalin a maninay, mangalolombat, kna ba paspas, sa so mga pphamatiyaan na mabaloy a malombat para mambo pkhakorop phiyapiya.</div>
+        <div id="share-links-2" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-3">
+        <div class="quran-text">وَالَّذِينَ هُمْ عَنِ اللَّغْوِ مُعْرِضُونَ 
+            <span class="ayah-number">(3)</span>
+        </div>
+        <div class="translation">Go so siran sii ko ilang (a katharo) na tomatalikhod siran (on)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:3" preload="none"
+                   data-surah="23"
+                   data-ayah="3"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:3')"
+                   onplay="highlightAyah('3')"
+                   onended="removeHighlight('3')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023003.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:3" onclick="togglePlay('23:3')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:3')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:3" value="0" max="100"
+         onchange="seekAudio('23:3', this.value)" style="width:200px;">
+  <span id="time-23:3" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:3" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:3', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(3)">Show Tafsir</button>
+            <button onclick="toggleFavorite(3)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(3)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '3',
+                                   'Go so siran sii ko ilang (a katharo) na tomatalikhod siran (on)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-3" class="tafsir">Ikadowa(2) a kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, na siran oto so pthalikhodan iran so al-laghw (اللَّغْوِ). Aya (اللَّغْوِ) al-laghw (a tig o Ibn Kathir) na langowa mga katharo a di bnar, mga katharo a da a khakowa on a gona ko agama, pd san so kapanakoto (a di bnar a katharo sa ba adn a sakotowa o Allah) ago so mga kandosa. Antonaa i okit a kathalikhodi sangkoto a al-laghw (اللَّغْوِ)? Aya okit na nggolalan ko kambilangataw – (وَإِذَا مَرُّوا بِاللَّغْوِ مَرُّوا كِرَامًا) “Go igira a siyagadan iran so (mga katharo a) ilang, na panizagadan iran a mbibilangataw siran” Ayah 25:72.  Pitharo o Nabi (ﷺ) a: (من حسن اسلام المرأ ترکہ ما لا یعنیہ) “Pd sa ikapiya a kiyapag Islam o taw na so kibagakn iyan ko nganin a da a khibgay niyan on a gona”.  So moslim na di niyan phangilabotn a langowa da a bali niyan a shay (katharo, pamamakin’gan, pagigimo, etc.) go da a babaya iyan on. Opama ka phakaibarat so kaoyagoyag ko donya sa ka attend sa board exam, na so donya na giyoto i ‘exam venue’, darpa a ron ka atteni so exam, na so mga tiyoba, mga fitna, mga problema, mga awida akal, boko, kamargnan, kasasakit, etc. na giyoto i questioneers (mga pakaiza a zmbagn) sangkoto a exam.  Na so kathay o kaoyagoyag ko donya (lifetime) na giyoto i ‘time duration’, a kathay a ibbgay ko pphag exam a ipag answer iyan sangkoto a Questioneer (mga pakayza).  Aya kapliyo o resulta angkoto a exam, na sii ko gawii a Yawmul Qiyamah.  Aya passing score, na kna ba datar o board exam a dapat na di mibaba so grade (score) ka ko 75% - sii sangkoto a gawii a Yawmul Qiyamah, na aya passing score, na asar a kalampasan o mapiya (correct answer) so marata (wrong answer), maana a 51% ko mapiya, na 49% ko marata, datar o kiyaaloya on sangkai a phakatondog a Ayah 23:102 (فَمَنْ ثَقُلَتْ مَوَازِينُهُ فَأُولَئِكَ هُمُ الْمُفْلِحُونَ) “Na sa taw a makapnd (ko mapiya) so mga timbang iyan, - na siran oto na siran i phama-kadaag”.  Giya ngkoto a pphag exam, sangkoto a gii niyan kapag exam, na da a pagilangn iyan a minutos, sigundo a ba niyan phanm batmbangn.  Sii rkaniyan sangkoto a masa na langowan a pnggolawlaan a makaliyoliyo ko kapphanmbaga niyan sangkoto a mga pakaiza na palaya dn galbk a ilang (al-lagw اللَّغْوِ) sabap sa katawan iyan a so khabaloy a resulta angkoto a exam na roo marororan (doon nakasalalay) so kakhargni ron ago so kakhalbodi ron ko kapagintaw ko donya.</div>
+        <div id="share-links-3" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-4">
+        <div class="quran-text">وَالَّذِينَ هُمْ لِلزَّكَاةِ فَاعِلُونَ 
+            <span class="ayah-number">(4)</span>
+        </div>
+        <div class="translation">Go so siran a sii ko kazakat (kapzotiya ko ginawa) na khigagalbk.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:4" preload="none"
+                   data-surah="23"
+                   data-ayah="4"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:4')"
+                   onplay="highlightAyah('4')"
+                   onended="removeHighlight('4')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023004.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:4" onclick="togglePlay('23:4')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:4')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:4" value="0" max="100"
+         onchange="seekAudio('23:4', this.value)" style="width:200px;">
+  <span id="time-23:4" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:4" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:4', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(4)">Show Tafsir</button>
+            <button onclick="toggleFavorite(4)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(4)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '4',
+                                   'Go so siran a sii ko kazakat (kapzotiya ko ginawa) na khigagalbk.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-4" class="tafsir">Ikatlo(3) a kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, na gi iran nggalbkn so kazakat. Antona angkoto a miyaaloy a zakat?  Dowa a qawl roo: paganay(1) a qawl na giya ngkaya a zakat (الزَّكَاة) na aya paka aantapan on na ‘so kapzotiya ko ginawa’ (نَزْكِيَّةُ النَّفْس) phoon ko mga rzik, so mga dosa, kapanakoto, etc. maana a kaphatiis, datar o kiyaaloya on sangkai a mga ayat: sii ko Ayah 91:9 (قَدْ أَفْلَحَ مَنْ زَكَّاهَا) “Sabnar a miyagontong (miyakadaag) so taw a (khiginawa ko) siyoti [o Allah] skaniyan”, sii ko Ayah 87:14 (قَدْ أَفْلَحَ مَنْ تَزَكَّى) “Sabnar a miyakadaag so taw a mizoti (miyananggila sa dosa)”, sii ko Ayah 24:21 (وَلَوْلَا فَضْلُ اللَّهِ عَلَيْكُمْ وَرَحْمَتُهُ مَا زَكَى مِنْكُمْ مِنْ أَحَدٍ أَبَدًا وَلَكِنَّ اللَّهَ يُزَكِّي مَنْ يَشَاءُ) “Go oda so kalbihan o Allah rkano, go so limo Iyan, na da a sotin Iyan rkano a isa bo sa dayon sa dayon. go ogaid na so Allah na pzotin Iyan so taw a kabaya Iyan”.  Kna ba aya paka aantapan saya na ba so zakat a so pthonggosn ko tamok a ipmbgay ko kiyapatotan a bgan ko zakat.  Aya mga dalil o mga thithindg sangkoto a paganay a qawl, na paganay(1) ron na sii ko Qur’an (a tig iran), na so kapkhaaloy ron o kipmbgan ko zakat a tamok na lalayon dn aya kiphlapiatn on na miprarakhs iyan angkai a dowa a katharo (إِيتَاءَ) ago (الصَّلَاةِ): datar o (وَإِيتَاءَ الزَّكَاةِ) “go so kibgan ko zakat”, (وَآتُوا الزَّكَاةَ) “go tonaya niyo so zakat”, (وَإِقَامَ الصَّلَاةِ وَإِيتَاءَ الزَّكَاةِ) “go so kitindgn ko mga sambayang, go so kitonayn ko zakat” Ayah 21:73, (وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ) “Go tindgn iyo so sambayang; go tonaya niyo so zakat” Ayah 4:43.  Sii sangkai a Ayah 23:4 na aya miniprakhs iyan a katharo na (فَاعِلُونَ) “khigagalbk”.  Ikadowa(2) a dalil na giya ngkai a Surah Moominun na sii initoron sa Makkah ko da pn katogalin o Nabi sa Madina, na so kibgan ko zakat na aya kinipatorayn on na sii ko ikadowa ragon ko Hijra. Ikadowa a qawl na (tig iran a) kna ka giyaya dn so zakat a tamok.  Aya thithindgan iran na sii sa pakaasal (a tig iran) na so kibgan ko zakat na inipatoray dn ko masa pn o Nabi sa Makkah, ogaid na so mga diyangka, so mga taks, so kapphangoliktaa ago so mga hokoman o zakat na sii initoron sa Madina, datar o kiyapanga aaloya on sangkai a mga Surah Makkiyah: sii ko Surah al-An’am, Ayah 6:141 (وَآتُوا حَقَّهُ يَوْمَ حَصَادِهِ) “go bgan iyo so zakat iyan ko alongan a kapragona on”, Surah Adh-Dhariyat, Ayah 51:19 (وَفِي أَمْوَالِهِمْ حَقٌّ لِلسَّائِلِ وَالْمَحْرُومِ) “Go sii ko mga tamok iran, na adn a rk (kabnar a ipznggay ron) ko pphamangni, go so 'mahroom' (domadapay)”, Surah Al-Ma'aarij, Ayah 70:24-25 (وَالَّذِينَ فِي أَمْوَالِهِمْ حَقٌّ مَعْلُومٌ - لِلسَّائِلِ وَالْمَحْرُومِ) “Go so siran so sii ko mga tamok iran so haq (kabnar) a mappnto - A bagian o pphamangni, go so 'mahroom' (domadapay)”, Surah Muzammil, Ayah 73:20 (وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ) “Go tindgn iyo so sambayang, go tonaya niyo so zakat”. Ogaid na pantag bo sa an mazipat o Moslim angkai a miyaaloy sangkai a Ayah 23:3 a ikatlo a sipat o moomin, na nggolwalaa niyan angkoto a dowa a miyaaloy, maana: sotiya niyan a ginawa niyan ago bgan iyan so zakat.</div>
+        <div id="share-links-4" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-5">
+        <div class="quran-text">وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ 
+            <span class="ayah-number">(5)</span>
+        </div>
+        <div class="translation">Go so siran sii ko mga kayaan (awrat) iran na khisisiyap.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:5" preload="none"
+                   data-surah="23"
+                   data-ayah="5"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:5')"
+                   onplay="highlightAyah('5')"
+                   onended="removeHighlight('5')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023005.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:5" onclick="togglePlay('23:5')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:5')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:5" value="0" max="100"
+         onchange="seekAudio('23:5', this.value)" style="width:200px;">
+  <span id="time-23:5" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:5" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:5', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(5)">Show Tafsir</button>
+            <button onclick="toggleFavorite(5)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(5)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '5',
+                                   'Go so siran sii ko mga kayaan (awrat) iran na khisisiyap.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-5" class="tafsir">Giya ngkai a Ayah na datar dn o Ayah 70:29 (وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ). Giyai i ikapat(4) a kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, a siran na sisiyapn iran so ‘kayaan (awrat)’ iran phoon ko mga haram a kamba bangonan sa walay.  Aya a mapipikir sangkoto a miyaaloy a ‘kayaan (awrat)’ na so piyamalongan o taw, mama babay.  Sa siran oto a mga moomin a miyamakadaag, na siniyap iran a piyamalongan iran phoon ko kazina, so kapphamakaya o taw ko taw datar iyan sa kaatawi (same sex) – ibarat o kapphakamaya o bakla ko datar iyan a mama (tabiya), datar oto mambo so mga tomboy (tabiya), so kapphamakaya ko mga binatang ago so kapphakaliyowa o taw ko sobra a babaya iyan (rakag) ngolalan sa lima niyan (mama babay – tabiya).  Ilaya ngka so marawa a osayan san sangkai a phakatondog a dowa a Ayah 23:6 ago 23:7. Pantag sa kapphalagowi ko di kasiyapa o mga taw ko awrat (piyamalongan) iran, na inisogo o Allah ko miyamaratiyaya a kapaka thapitapia iran ko da a mga karoma iran (a mga babay ago mga mama ko oriyan o kibtad o btang a mayto), datar o kiyaaloya Niyan on ko Ayah 24:32 (وَأَنْكِحُوا الْأَيَامَى مِنْكُمْ وَالصَّالِحِينَ مِنْ عِبَادِكُمْ وَإِمَائِكُمْ) “Go pakipa mangaroma aniyo so mga da a karoma niyan (a mga babay rkano, go pakapa mangaroma aniyo so da a karoma niyan a pd ko mga mama) rkano, go so mga salih (mga mbibilangataw ko Allah) a pd ko mga oripn iyo a mga mama ago so mga oripn iyo a mga babay, go so mga salih (mga mbibilangataw ko Allah) a pd ko mga oripn iyo a mga mama ago so mga oripn iyo a mga babay”.  Aya maana a da a karoma niyan na ndatar roo so babay ago mama (raga, mangoda, bitowann, balo).  Taman sa ini promise o Allah a “Amay ka ba siran mababaloy a mga (mama a) pkhamr’mran, na mbgan siran o Allah ko kalbihan iyan” (إِنْ يَكُونُوا فُقَرَاءَ يُغْنِهِمُ اللَّهُ مِنْ فَضْلِهِ) Ayah 24:32.  Sa “phindiyara (thigr pasin) so siran a da a khibaog iran ko kapangaroma” (وَلْيَسْتَعْفِفِ الَّذِينَ لَا يَجِدُونَ نِكَاحًا), ka ini promise o Allah a mathay magaan na “bgan siran o Allah ko kalbihan Iyan” (حَتَّى يُغْنِيَهُمُ اللَّهُ مِنْ فَضْلِهِ) sa mipangaroma iran.  Pitharo o Nabi (ﷺ) sangkai a mga Hadith a: (وَمَنْ يَسْتَعْفِفْ يُعِفَّهُ اللَّهُ) “Sa taw a phindiyara, na pindiyaraan o Allah”, (مَن يَضْمَن لي ما بيْنَ لَحْيَيْهِ وما بيْنَ رِجْلَيْهِ، أضْمَنْ له الجَنَّةَ) “Sa taw a ‘guarantee’ iyan iyan rakn (a tig o Nabi) so pagltan o dowa a sompa iyan (maana so dila ago modol) ago so pagltan o dowa a bobon iyan (maana so piyamalongan) na guarantee iyan akn on so sorga”.  Sa guarantee inyo hay mga da a karoma iran ko Nabi so pagltan o mbala a dowa bobon iyo, nggolalan sa kipakawatann iyo ko kazina ago so kanggalbka o mga lima niyo ko piyakasisingay a galbk a skano bo i makasasaksi on ago so Allah, ka an rkano ka guarantee i o Nabi so sorga.</div>
+        <div id="share-links-5" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-6">
+        <div class="quran-text">إِلَّا عَلَىٰ أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ فَإِنَّهُمْ غَيْرُ مَلُومِينَ 
+            <span class="ayah-number">(6)</span>
+        </div>
+        <div class="translation">Sii ko mga kayaan iran na khisisiyap) Inonta bo san ko mga karoma iran, odi na san ko miyakhapaar o mga tangan iran (babay a oripn) - ka mataan a siran na kna ba (on) khikadadawai (di siran on khasangka).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:6" preload="none"
+                   data-surah="23"
+                   data-ayah="6"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:6')"
+                   onplay="highlightAyah('6')"
+                   onended="removeHighlight('6')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023006.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:6" onclick="togglePlay('23:6')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:6')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:6" value="0" max="100"
+         onchange="seekAudio('23:6', this.value)" style="width:200px;">
+  <span id="time-23:6" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:6" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:6', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(6)">Show Tafsir</button>
+            <button onclick="toggleFavorite(6)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(6)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '6',
+                                   'Sii ko mga kayaan iran na khisisiyap) Inonta bo san ko mga karoma iran, odi na san ko miyakhapaar o mga tangan iran (babay a oripn) - ka mataan a siran na kna ba (on) khikadadawai (di siran on khasangka).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-6" class="tafsir">(لِفُرُوجِهِمْ حَافِظُونَ - إِلَّا عَلَى أَزْوَاجِهِمْ) “(Sii ko mga kayaan iran na khisisiyap) Inonta bo san ko mga karoma iran” – ndatar san so mama ago babay, maana so mama (husband) a ziyapn iyan so kayaan iyan para bo san ko karoma niyan (wife iyan), sa datar oto mambo a so babay (wife) a ziyapn iyan so kayaan iyan para bo san ko karoma niyan (husband iyan).  Ogaid na giya ngkoto a (أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ) “odi na san ko miyakhapaar o mga tangan iran”, na sii bo oto ko mga mama – aya maana niyan na halal ko mama a kapamakaya niyan ko oripn iyan a babay, na HARAM ko babay a kapakipamakay niyan ko oripn iyan a mama. Giya ngkai a Ayah 23:6, na datar dn o miyaaloy ko Ayah 70:30 (إِلَّا عَلَى أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ فَإِنَّهُمْ غَيْرُ مَلُومِينَ).  Langowa okit a kapamakay (sexual intercourse) a miyaaloy sangkoto a osayan a miyaipos (Ayah 23:5) ago so mga salakaw roo, na pala palaya dn oto haram - aya bo a HALAL ko mga mama a kambabangonan sa walay na sii ko darodopa iran, ago sii ko mga oripn iran a mga babay - gyoto bo!  So langowa makaliyoliyo roo na HARAM, pd roo so gii kambabanoga o ginawa ko kapakaraos iyan nggolalan ko galbk o lima niyan.  Pd sangkoto a miyanga aaloy a haram a ‘relation’ o babay ago so mama, na so bithowan sa Mut'ah (temporary marriage) a papakayn o mga Shi'ah-rafida.  Miyaosay sa marawa so mipantag sangkanan a mut’ah sii ko Ayah 4:24. Aya Mut’ah na opama na para mada so kaha HARAM o kapamakaya o mama ko isa a babay, na pphakaokitn iran sa pkhawingn iran so mama sangkoto a babay, ko oriyan o kibtad o mayto btang (sokay) sa pphamamirmaan a kapasadan a sii sangkoto a isa ka gagawii, salongan, tlo gawii, sawlan, o antonaa i kathay a phagayonan, etc. na kharomai siran, na so kaipos oto na aya dn talak – sii sa Islam, ko Shar’ah o Nabi Mohammad (ﷺ) na aya pakaasal na so kakhawing, na sii ko niat a tatap, go dayon sa dayon taman ko kapapatay.  Aya ipamamangkol (pinangangatuwiran) o mga Shi’ah-Rafidi sa kapa pakaya iran ko Mut’ah, na da (a tig iran) a Ayah a ba piyayag iyan sa marayag a ba haram so mut’ah, sa opama ka ba bnar a haram, na pakarayagn dn o Allah ko Qur’an Iyan.  Bnar a da a Ayah ogaid na sii miyakarayag ko madakl a mga hadith o Nabi a sangat a kiyapaka harama roo o Allah - sa pthalikhodan o mga Shi’ah-Rafidi angkoto a mga hadith.  Pd sangkoto a mga Hadith na: piyanotho Sabra al-Juhani a miyakaysa a pd iyan so Nabi (ﷺ) na pitharo o Nabi ko mga taw a: “Hay skano a mga taw, sabnar a sakn na miyapakay akn rkano sa muna so kapakip mut’ah ko mga babay, na mataan a so Allah na sabnar a piyaka HARAM Iyan oto taman ko Yawmul Qiyamah.  Na sa taw a adn a ipag’pda iyan a babay ko datar anan a kapasadan (mut’ah) na pagawaan iyan, sa oba adn a bawia niyo ko nganin minibgay niyo kiran” (يَا أَيُّهَا النَّاسُ إِنِّي قَدْ كُنْتُ أَذِنْتُ لَكُمْ فِي الاِسْتِمْتَاعِ مِنَ النِّسَاءِ وَإِنَّ اللَّهَ قَدْ حَرَّمَ ذَلِكَ إِلَى يَوْمِ الْقِيَامَةِ فَمَنْ كَانَ عِنْدَهُ مِنْهُنَّ شَىْءٌ فَلْيُخَلِّ سَبِيلَهُ وَلاَ تَأْخُذُوا مِمَّا آتَيْتُمُوهُنَّ شَيْئًا).  Isa pn a Hadith na so dn so Ali Bin Abi Talib i miyanothol on a: “Mataan a so Rasul (ﷺ) na inisapar iyan ko gawii a (kiya tabana sa) Khaybar so kakharomai a mut’ah ago so kakana ko sapo o Himar (donkey) a magiingd” (أن رسول الله صلى الله وسلم نهى عن نكاح المتعة وعن لحوم الحمر الأهلية زمن خيبر).  Bnar dn sa da a Ayah a ba niyan piyayag sa marayag a haram so mut’ah, ogaid na dapiya giya bo angkaya a Ayah 23:6 na khasanaan a miyakang gonanao sa kahaharam o Mut’ah, sabap sa opama ka aya bo a di haram a pphamakayn o mama na so karoma niyan ago so oripn iyan a babay, na so babay a kiyawing sa mut’ah na haram i ba pamakaya o mama a kiyawing on, sabap sa giya ngkoto a babay na di maptharo i ba ‘karoma’ (wife), na di pman maptharo i ba oripn a babay.  Anda sabap i skaniyan na di maptharo a karoma (wife)?  Sabap sa so mga hokoman (rulings) o Islam a manonompang ko karoma a babay na di rkaniyan ‘applicable’, di rkaniyan phakamoayan, ibarat iyan na: (1) sii ko masa a da pn ka expire o piyagayonan a kathay a ithatapi iran, na o isa i mawapat kiran a dowa (so mama ago so babay), na so minibagak a tamok o isa na di ron makapangwaris so isa.  (2) Sii ko kakhapos (expire) o piyagayonan a kathay o kapakathatapi iran na di oto maptharo a ‘talaq’ (divorce), sabap roo na (3) di khaidaan sa tlo ka basa (three minstrual period), odi na tlo olan so babay.  (4) Kna ba skaniyan a babay khibilang, khiganap a isa ko pat a piyakay a kadakl a karoma o mama, etc. etc.  Sabap roo na opama ka di skaniyan khibilang a karoma (legal wife) ko Islam, ago di pman khibilang a ba skaniyan oripn o mama, na sii skaniyan khibilang sangkoto a (وَرَاءَ ذَلِكَ) “salakaw sangkoto (a karoma ago oripn a babay)” Ayah 23:7 sa sii skaniyan khibilang a pd ko “siran oto na siran so mga malawani (mga tamaba)” (فَأُولَئِكَ هُمُ الْعَادُونَ) Ayah 23:7.  Isa a pn ipndalil o mga Shi’ah-Rafidi sa kiya halala iran ko mut’ah na so nganin a mawatan ko kabbnar iyan a ba thindgi a dalil a skaniyan so miyaaloy ko Ayah 4:24 (فَمَا اسْتَمْتَعْتُمْ بِهِ مِنْهُنَّ فَآتُوهُنَّ أُجُورَهُنَّ فَرِيضَةً) “Na sadn sa kiyasawitan (miniprorada) iyo a pd kiran, na bgan iyo kiran so mga mahar iran a miyapnto”.  Ogaid na miyakalal-la oto ribat !!! – ilaya ngka so osayan san a marawa sangkoto a Ayah 4:24. (أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ) “odi na san ko miyakhapaar o mga tangan iran (babay a oripn)” – ilaya ngka so osayan ko Ayah 70:30.</div>
+        <div id="share-links-6" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-7">
+        <div class="quran-text">فَمَنِ ابْتَغَىٰ وَرَاءَ ذَٰلِكَ فَأُولَـٰئِكَ هُمُ الْعَادُونَ 
+            <span class="ayah-number">(7)</span>
+        </div>
+        <div class="translation">Na sa taw a mbabanog sa salakaw sangkoto (a karoma ago oripn a babay), na siran oto na siran so mga malawani (mga tamaba).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:7" preload="none"
+                   data-surah="23"
+                   data-ayah="7"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:7')"
+                   onplay="highlightAyah('7')"
+                   onended="removeHighlight('7')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023007.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:7" onclick="togglePlay('23:7')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:7')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:7" value="0" max="100"
+         onchange="seekAudio('23:7', this.value)" style="width:200px;">
+  <span id="time-23:7" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:7" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:7', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(7)">Show Tafsir</button>
+            <button onclick="toggleFavorite(7)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(7)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '7',
+                                   'Na sa taw a mbabanog sa salakaw sangkoto (a karoma ago oripn a babay), na siran oto na siran so mga malawani (mga tamaba).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-7" class="tafsir">Giya ngkai a Ayah na miyaaloy pn ko Ayah 70:31 (فَمَنِ ابْتَغَى وَرَاءَ ذَلِكَ فَأُولَئِكَ هُمُ الْعَادُونَ).  Inonta bo a kna ba haram ko mama a kapamakaya niyan on na so karoma niyan ago so oripn iyan a babay, “Na sa taw a mbabanog sa salakaw sangkoto (a karoma ago oripn a babay), na siran oto na siran na mmamalawani” (فَمَنِ ابْتَغَى وَرَاءَ ذَلِكَ فَأُولَئِكَ هُمُ الْعَادُونَ). Tanodan ka so kapapakay a kapkha pamakaya o mama ko orip iyan a babay, na kna ba sabap sa kawing, ogaid na sabap ko kamimiliki niyan on a mibibilang a oripn iyan – giyoto i sabap a kna ba kailangan i ba kawinga so mama (master) ko oripn iyan a babay para mapamakay niyan.  Sabaad ko mga pananafsir na aya panarima iran na aya kon a kakhapakay a kakhapamakaya o mama ko oripn iyan a babay na daan on a khakawing, sabap (a tig iran) sangkoto a miyaaloy ko Surah An-Nisa, Ayah 4:25 (وَمَنْ لَمْ يَسْتَطِعْ مِنْكُمْ طَوْلًا أَنْ يَنْكِحَ الْمُحْصَنَاتِ الْمُؤْمِنَاتِ فَمِنْ مَا مَلَكَتْ أَيْمَانُكُمْ مِنْ فَتَيَاتِكُمُ الْمُؤْمِنَاتِ) “Go sa taw a di phakagaga rkano sa btang a maka pangaroma ko mga 'muhsanaat' (mga babay a mga pipiya a taw) a miyamaratiyaya, na sii (pangaroma) ko pd ko miyakhapaar o mga tangan iyo a mga oripn iyo (a mga babay) a miyamaratiyaya،،،”.  Mariribat oto a panarima sabap sa aya mapipikir sangkoto a Ayah 4:25 a mama a patoray so kakawinga on ko oripn a babay na amay ka ba so oripn a babay na aya phangaroma on, na mama a salakaw ko master iyan (khioripn on).  Aya maana niyan na so mama a di phakagaga sa kapakapangaroma niyan sa babay a mapiya a taw, na aya wasiyat on o agama na mbabanog sa oripn a babay, na aya nyan pangaromaa, ko oriyan o kapakaidin o mama a khioripn sangkoto a babay (فَانْكِحُوهُنَّ بِإِذْنِ أَهْلِهِنَّ) “pamangaroma kano kiran sa idhin o wali kiran (so khimanga oripn kiran)”, ago sii ko oriyan o kibgan iyan ko mayto a a mahar (وَآتُوهُنَّ أُجُورَهُنَّ بِالْمَعْرُوفِ) “go bgan iyo kiran so mga mahar iran, sii ko adat a mapiya”.  (فَمَنِ ابْتَغَى وَرَاءَ ذَلِكَ فَأُولَئِكَ هُمُ الْعَادُونَ) “Na sa taw a mbabanog sa salakaw sangkoto (a karoma ago oripn a babay), na siran oto na siran i mga malawani (mga tamaba)” – giya ngkoto a miyaaloy a mga kapamakay a salakaw ko karoma ago oripn a babay datar o kazina, so kapamakay o taw ko datar iya sa kaatawi (same sex), datar o kapphakamaya o bakla ko datar iyan a mama (والعياذ بالله), datar oto mambo so mga tomboy (tabiya), so kapphamakaya ko mga binatang, etc. na da dn a sangkaan roo ko mga ‘fuqaha’ (mamponay ko ilmo a Fiq’hi) sa kaha haram iyan. Ogaid na sii siran bo makambibida bida sa tindg ko mipantag ko tig iran sa English a ‘masturbation’ (so gii kasinggkaronga o taw sa piyamalongan iyan (والعياذ بالله), taman sa adn a lomiyo).  Sii ko Ahmad Ibn Hanbal na da niyan pakaharama na sii ko Malik, Shafii na sangat a kiyapaka harama iran on.  Sii pman ko Hanafi, na bnar ko piyaka haram iyan ogaid na amay (a tig iyan) ka aya khipalagoy o taw ko lbi a mala a dosa, a so kapakazina, na miyapakay a kanggolawlaa niyan on sa kna ba niyan ba dn mbaloya a dadabiatan iyan.</div>
+        <div id="share-links-7" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-8">
+        <div class="quran-text">وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ 
+            <span class="ayah-number">(8)</span>
+        </div>
+        <div class="translation">Go so siran sii ko mga sarig kiran, go so mga kapasadan (diyandi) iran na khisisiyap.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:8" preload="none"
+                   data-surah="23"
+                   data-ayah="8"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:8')"
+                   onplay="highlightAyah('8')"
+                   onended="removeHighlight('8')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023008.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:8" onclick="togglePlay('23:8')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:8')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:8" value="0" max="100"
+         onchange="seekAudio('23:8', this.value)" style="width:200px;">
+  <span id="time-23:8" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:8" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:8', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(8)">Show Tafsir</button>
+            <button onclick="toggleFavorite(8)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(8)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '8',
+                                   'Go so siran sii ko mga sarig kiran, go so mga kapasadan (diyandi) iran na khisisiyap.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-8" class="tafsir">Giya ngkai a Ayah 23:8 na datar dn o miyaaloy ko Ayah 70:32 (وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ). Giyai i ikalima(5) a ropaan sa kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, a siran na ipthonay iran so mga sarig (اَمَنَات - trusts).  Madakl a mga ayat ko Qur’an a somiyogo ko kapziyapa ko sarig ago so kapasadan, isa on angkai a Ayah 23:8 ago so Ayah 4:58 (إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَى أَهْلِهَا) “Mataan a so Allah na isosogo Iyan rkano so kibgan iyo ko mga sarig sii ko khirk on”.  Mararangkom san so (1) kanggolawlaa o taw ko langowan a shay’ a patoray a kanggolawlaa niyan on ago so kisaparn niyan ko langowan a shay’ a inisapar on, ago  so (2) kasiyapa o taw ko nganin a inisarig on a kasiyapa niyan on.  Giya ngkoto a paganay na giyoto so sarig a kabnar o Allah san ko manosia, na giya ngkoto a ikadowa na giyoto sa sarig a kabnar o manosia ko datar iyan a manosia.  Aya sopaka oto na so mga monafiq a igira a pphanothol siran na kapapamokhag, go igira a miyakiphasada siran na di siran thoman sa pasad ago igira a siyarigan siran na di siran khasarigan. Aya mga sarig a kabnar o manosia ko datar iyan a manosia, na tanto a madakl a ropaan iyan: datar o kikasowin ko itatadin san ko khirk on ko masa a kapthontota niyan on.  Datar pn o mga informations (mga thothol) a inisarig a pagns ko taw na so kipokakn iyan on sa pd a taw, a da miyodas ko kapopoonan, khirk ko information, na pd oto sa ropaan o kiyada o sarig (breach of trust).  Sii ko kapagimpliyado, na so nganin a piyagayonan a kapasadan (work contract) mipantag ko antonaa i masasakop o galbk, so kadakl a oras ko oman salongan, so sokay a itonay ko oman sawlan, ago so mga pd a miyaaloy ko kapasadan (work contract), na sarig oto a patoray ko dowa a makambabala (two parties) a kinggolalann iran on. Langowa sapak o paratiyaya a khapakay a da maaloy sangkai a mga ropaan o miyamaratiyaya (mo’minun) na miyakasold, miyarangkom sangkai a Ayah 23:8 (وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ) datar o kinisogoon ko kazoti, so kinipatorayn ko mapiya ago so kinisaparn ko marata, so hiyalal ago hiyaram o Allah, kaphowasa, kapnayhaji, etc. – kalangowan anan ago so mga salakaw ron na palaya dn ‘sarig’ (أَمَانَات). Aya ikanm(6) a ropaan sa kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, na siran na ipthonay iran so kapasadan (عھد).  Madakl a ayat sa Qur’an a miyaaloy ron angkanan a kapasadan (عھد), datar o Ayah 17:34 (وَأَوْفُوا بِالْعَهْدِ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا) “Go tomann iyo so kapasadan, mataan a so kapasadan na miyaadn a ipagiza (rkano sa alongan a Qiyamah)”, datar pn o miyaaloy ko Ayah 2:177, Ayah 5:1, etc.  Giya ngkoto a kapasadan (عھد) na dowa a mapipikir on: paganay(1) ron na kapasadan a inisorat o dowa kataw (odi na dowa lompok) mipantag ko mga atastanggongan (duties) ago mga patoray a mga galbk (obligations) a pnggalbkn o sabaad kiran ko sabaad.  Na so katalikhodi thibaba o dapiya antawaa sangkoto dowa (anyone or both parties) ko dapiya antonaa a ‘provisions’ sangkoto a kapasadan na inisapar ago piyakadosadosa sii ko Islam.  Ago ikadowa(2) a mapipikir on, na so nganin a katharo a biyokaan sa trang sa atay o isa a pd sa shay’ a imbgay niyan odi na galbk a pnggalbkn niyan ko isa, a kna ba miyakaokit sa tgl ogaid na inipangonaan (inim volunteer) iyan – aya katimbl a katharoa roo sa English na ‘promise’.  Na datar oto a so di ron kitomann thibaba, na inisapar ago piyakadosadosa sii ko Islam.  Pitharo o Nabi (ﷺ) sa hadith a (وعد الحر دين عليه) “So promise na otang” a patoray ko taw a kabayadi niyan on, nggolalan ko kitomann iyan on.  Pitharo pn o Nabi (ﷺ) a “Sa taw a di niyan itoman so sarig, na da a paratiyaya niyan.  Ago sa taw a di niyan itoman so promise, na da a Islam iyan”.</div>
+        <div id="share-links-8" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-9">
+        <div class="quran-text">وَالَّذِينَ هُمْ عَلَىٰ صَلَوَاتِهِمْ يُحَافِظُونَ 
+            <span class="ayah-number">(9)</span>
+        </div>
+        <div class="translation">Go so siran a so mga sambayang iran na sisiyapn iran (ko mga wakto niyan)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:9" preload="none"
+                   data-surah="23"
+                   data-ayah="9"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:9')"
+                   onplay="highlightAyah('9')"
+                   onended="removeHighlight('9')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023009.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:9" onclick="togglePlay('23:9')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:9')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:9" value="0" max="100"
+         onchange="seekAudio('23:9', this.value)" style="width:200px;">
+  <span id="time-23:9" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:9" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:9', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(9)">Show Tafsir</button>
+            <button onclick="toggleFavorite(9)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(9)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '9',
+                                   'Go so siran a so mga sambayang iran na sisiyapn iran (ko mga wakto niyan)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-9" class="tafsir">Giya ngkai a Ayah 23:9 na miyaaloy pn sii ko Ayah 70:34 (وَالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ). Giyai i ikapito(7) a ropaan sa kiniropaan o Allah ko mga ‘moominun’ a miyamakadaag a miyaaloy sangkoto a miyaipos a Ayah 23:1, a siran na so mga sambayang iran na sisiyapn iran (ko paganay a mga wakto iyan).  So sambayang na ndatar on so babay ago mama a da dn a exempted on, da dn a break odi na vacation on, patoray dn ko langowa oras, langowa btad: kapipiya, kasasakit, phlalakaw, gii mlayalayag, taman ko gii makithidawa sa laboan na da baloya o Allah a ba siran pasin ma exempted ko sambayang.  Aya bo a pipharowan o Allah a bigan Iyan sa exemption (kapakalibri) pasin ko sambayang na so babay ko masa a kandodon o basa, sa kna ba iran oto khabayadi ko mga pd a oras. Sa taw a gaksn iyan angkanan a pito a miyaaloy ago ipamayandg iyan na skaniyan na tarotop a moomin a makapmbagian ko ‘falah’ (kapagontong) sangkai a donya na samporna sa maori a alongan.  Ogaid na tanodan ka so Allah na inipanagipoon Iyan angkoto a pito a mga ropaan o mo’min sii ko katholabos ko sambayang na piyaninggaposan Iyan pman sii ko kasiyapa ko mga sambayang – aya mitotoro oto na so sangat a kakhikinanglani o manosia ko sambayang ago langowan angkoto a pito a miyaaloy na aya lbi ron a mapnd na so sambayang a dapiya giyoto bo (a sambayang) na khasanaan a miitong iyan so manosia a ‘moomin’, datar o kiyatharoa on o Nabi (ﷺ) sa Hadith a: (اسْتَقِيمُوا وَلَنْ تُحْصُوا وَاعْلَمُوا أَنَّ خَيْرَ أَعْمَالِكُمُ الصَّلَةُ وَلَا يُحَافِظُ عَلَى الْوُضُوءِ إِلاَّ مُوْمِن) “Pamamayandg kano go di niyo dn oto khatarotop, go knala niyo a aya taralbi a mapiya ko mga amal iyo na so sambayang go da a somisiyap ko kaa abdas (lalayon) inonta na moomin”.  Pitharo pn o Nabi (ﷺ) a: (أولُ ما يحاسبُ بهِ العبدُ يومَ القيامةِ الصَّلاةُ ، فإنْ صَلَحَتْ ، صَلَحَ سائِرُ عَمَلِه ، و إنْ فَسَدَتْ فَسَدَ سائِرُ عَمَلِه) “Aya pagampaganay a phamagitongn ko oripn sii ko gawii a kaphamagitong na so sambayang, na o makaapas (so sambayang) na miyakaapas so kalangowan o mga amal iyan, na o mabinasa (di makaapas) na miyabinasa so kalangowan o mga amal iyan”.</div>
+        <div id="share-links-9" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-10">
+        <div class="quran-text">أُولَـٰئِكَ هُمُ الْوَارِثُونَ 
+            <span class="ayah-number">(10)</span>
+        </div>
+        <div class="translation">Siran oto na siran so mga waris (khimangabagian)</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:10" preload="none"
+                   data-surah="23"
+                   data-ayah="10"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:10')"
+                   onplay="highlightAyah('10')"
+                   onended="removeHighlight('10')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023010.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:10" onclick="togglePlay('23:10')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:10')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:10" value="0" max="100"
+         onchange="seekAudio('23:10', this.value)" style="width:200px;">
+  <span id="time-23:10" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:10" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:10', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(10)">Show Tafsir</button>
+            <button onclick="toggleFavorite(10)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(10)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '10',
+                                   'Siran oto na siran so mga waris (khimangabagian)')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-10" class="tafsir">Antonaa i imbalas o Allah sangkoto a mga moomin a miyazipat iran angkoto a pito a mga sipat a iniropa o Allah sangkoto a miyangaiipos a mga ayat?  Aya imbalas kiran o Allah na siran i pakaphang waris Niyan ko sorga Firdaws! a ron rkaniyan khatoon so tarotop a kapagontong a miyaaloy sangkoto a pagampaganay a ayat sangkai a Surah (قَدْ أَفْلَحَ الْمُؤْمِنُونَ) “Sabnar a miyakadaag (miyagontong) so miyamaratiyaya (mga moominun)” Ayah 23:1. Datar o kiyaaloya on sangkai a hadith (مَا مِنْكُمْ مِنْ أَحَدٍ إِلاَّ وَلَهُ مَنْزِلَاانِ مَنْزِلٌ فِي الْجَنَّةِ وَمَنْزِلٌ فِي النَّارِ فَإِنْ مَاتَ فَدَخَلَ النَّارَ وَرِثَ أَهْلُ الْجَنَّةِ مَنْزِلَهُ فَذَلِكَ قَوْلُهُ - أُوْلَيِكَ هُمُ الْوَارِثُونَ) a so oman i pizakatawan ko mga manosia na adn a inadn o Allah a darpa iyan ko naraka ago darpa iyan ko sorga – sa aya maana oto na giya ngkoto a kasorgaan a khaoma ngka ko sorga (pangninta a ibgay rka o Allah) na pithiyagar dn oto o Allah a rk ka, na ino pagaloya sangkai a Ayah a skaniyan a kasorgaan ka na maphangwaris ka, a obadi andang dn oto a inisnggay a rk ka?  Isa a smbag na so issnggay a rk ka na rk ka dn, ogaid na so mga darpa, mga kasorgaan a mimbaloy a bakanti, sabap sa so mga khimanga rk on na miyamaka naraka (pakalidasn tano ron o Allah) na maphangowaris oto ago mapm bagibagi san ko mga moomin a miyamakasorga.</div>
+        <div id="share-links-10" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-11">
+        <div class="quran-text">الَّذِينَ يَرِثُونَ الْفِرْدَوْسَ هُمْ فِيهَا خَالِدُونَ 
+            <span class="ayah-number">(11)</span>
+        </div>
+        <div class="translation">Siran i makaphangowaris ko (sorga) Firdaws. Siran roo na mga kakal.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:11" preload="none"
+                   data-surah="23"
+                   data-ayah="11"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:11')"
+                   onplay="highlightAyah('11')"
+                   onended="removeHighlight('11')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023011.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:11" onclick="togglePlay('23:11')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:11')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:11" value="0" max="100"
+         onchange="seekAudio('23:11', this.value)" style="width:200px;">
+  <span id="time-23:11" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:11" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:11', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(11)">Show Tafsir</button>
+            <button onclick="toggleFavorite(11)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(11)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '11',
+                                   'Siran i makaphangowaris ko (sorga) Firdaws. Siran roo na mga kakal.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-11" class="tafsir">Giyai i smbag sangkoto a pakaiza sangkoto a pagampaganay a Ayah 23:1: Antonaa i kapakadaag, kapagontong (success)?  Aya kapakadaag na so kabaloy o taw a mapd ko mga phangowaris ko Sorga Firdaus.  Na andamanaya i kabaloy ngka a mapd sangkoto a mga phangowaris ko Sorga Firdaus?  Aya kakhapd ka on na baloya ngka a ginawa ngka a ‘moomin’ go zipata ngka angkoto a miyanga aaloy a pito a mga sipat, ropaan  a iniropa sangkoto a miyanga iipos a mga ayat.  Giya ngkai a Ayah 23:11, na datarai so Ayah 19:63 (تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا) “Giyoto so sorga a so pakiphang warisan Ami ko pd ko mga oripn Ami a taw a miyabaloy a mananaggila” ago so Ayah 43:72 (وَتِلْكَ الْجَنَّةُ الَّتِي أُورِثْتُمُوهَا بِمَا كُنْتُمْ تَعْمَلُونَ) “Go giyoto so sorga a so piyakipango-warisan rkano skaniyan (a balas) sabap ko nganin a miyabaloy kano a gii niyo nggalbkn (a mapiya ko donya)”.  Pitharo o Nabi (ﷺ) a: (إِذَا سَأَلْتُمُ اللهَ الْجَنَّةَ فَاسْأَلُوهُ الْفِرْدَوْسَ فَإِنَّهُ أَعْلَى الْجَنَّةِ وَأَوْسَطُ الْجَنَّةِ وَمِنْهُ تَفَجَّرُ أَنْهَارُ الْجَنَّةِ وَفَوْقَهُ عَرْشُ الرَّحْمن) “Igira a piyangni niyo ko Allah so kapakasorga, na pphangniya niyo Ron so ‘Firdaws’, ka mataan a skaniyan i miyakaporoporo ko mga sorga ago millmbak skaniyan ko sorga ago phoon on, na pphamangondas so mga lawasayg go aya poro iyan na so dn so Arsh o makalimoon”.  Pitharo o Nabi (ﷺ) a: “Amay ka makatalingoma so Yawmul Qiyamah, na znggayan o Allah so oman i isa a moomin sa sakataw a Jew (Yahudi) ago sakataw a Christian, sa ptharoon on a ‘siran aya i mga sanggar (ransom) ka ko naraka’” (إِذَا كَانَ يَوْمُ الْقِيَامَةِ دَفَعَ اللهُ لِكُلِّ مُسْلِمٍ يَهُودِيًّا أَوْ نَصْرَانِيًّا فَيُقَالُ هَذَا فِكَاكُكَ مِنَ النَّار), “Sa phakatalingoma sii ko alongan a Qiyamah so mga taw a pd ko mga moslim a ndadatar o palaw a mga dosa iran, na pmaapn kiran oto o Allah ago sii Niyan phakiposai angkoto a mga dosa iran ko mga Jew (Yahudi) ago mga Christians”.</div>
+        <div id="share-links-11" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-12">
+        <div class="quran-text">وَلَقَدْ خَلَقْنَا الْإِنسَانَ مِن سُلَالَةٍ مِّن طِينٍ 
+            <span class="ayah-number">(12)</span>
+        </div>
+        <div class="translation">Go ibt ka mataan a sabnar a inadn Ami so manosiya (so Adam) a phoon sa ‘sulalah’ (the best extract) a pd sa lapot (lopa a mababasa).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:12" preload="none"
+                   data-surah="23"
+                   data-ayah="12"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:12')"
+                   onplay="highlightAyah('12')"
+                   onended="removeHighlight('12')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023012.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:12" onclick="togglePlay('23:12')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:12')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:12" value="0" max="100"
+         onchange="seekAudio('23:12', this.value)" style="width:200px;">
+  <span id="time-23:12" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:12" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:12', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(12)">Show Tafsir</button>
+            <button onclick="toggleFavorite(12)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(12)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '12',
+                                   'Go ibt ka mataan a sabnar a inadn Ami so manosiya (so Adam) a phoon sa ‘sulalah’ (the best extract) a pd sa lapot (lopa a mababasa).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-12" class="tafsir">Pat a kiniropaan sii ko Qur’an ko kapopoonan o kiyaadna ko Adam: [1] paganay na (مِنْ تُرَابٍ) “phoon sa bot’tha (lopa a mamara)” Ayah 3:59, oriyan iyan na kagiya kasaogan sa ig, na mimbaloy a [2] (طِينٍ) “lapot (lopa a mababasa)” Ayah 23:12, sa pimbontalan dn o Kadnan nggolalan ko lima Niyan (Ayah 38:75), oriyan iyan na kagiya mamara, na mimbaloy a [3] (صَلْصَالٍ مِنْ حَمَإٍ مَسْنُونٍ) “lopa a gango, a pd sa maitm a lipaw, a gii zasalin-salin (pkhabaroba sa warna ago baw)” Ayah 15:26, taman sa kagiya mamaramara dn na mimbaloy a [4] (صَلْصَالٍ كَالْفَخَّارِ) “lopa a gango, a lagid o kiyomba (piyagiyaw)” Ayah 55:14, oriyan iyan na miyansokan o Allah sa niyawa. So kiya adna ko Adam ago so mga moriyaaw niyan, na miyokit ko pito a pizapangkat a kiyapangadn (7 stages of creation of man) datar o kiya aloya on sii sangkai a Ayah 23:14.  So kiyaadna ko Adam na minggolalan sa (سُلَالَةٍ مِنْ طِينٍ) “‘sulalah’ (the best extract) a phoon sa lapot”, na so mga moriyataw niyan na inadn a minggolalan sa (سُلَالَةٍ مِّن مَّأءٍ مَّهِينٍ) Ayah 32:8 “‘sulalah’ (the best elements) a phoon sa ig a ipkhagowad (ig a malubay, phophoyot, opama na mani, sperm)”.  Aya ‘sulalah’ (سُلَالَةٍ), na so miyakapiyapiya, inaraw ago libat a shay’ a phoon ko isa a shay’ (the best extract).  So lopa a so ron phoon a inadn so Adam, na giyoto so miyakapiyapiya ago inaraw a lopa a libat a phoon ko mga lopa ko donya (the best extract).  Antonaa oto a lopa ko mga lopa ko donya?  Sii ko donya na pimbarang so mga lopa on: adn a lopa a kabagabagas, na adn a masibokar, na adn mariga a lopa, mapoti a lopa, maitm, etc. Datar o kiyaknala on o miyamag iskuwela, na sii sa science na aya kadakl a ‘elements’ sii ko “Periodic Table of Elements”, na 118 elements – so 113 sangkoto 118 na sii pkhatoon ko pimbarang a lopa ko donya.  Giya ngkoto a 113 elements na khatoon ka a mipaparak ko mga lopa ko donya - kna ba langon a lopa ko donya na kathoon on angkoto a 113 elements.  Giyoto i sabap a miyapanothol sa Hadith (على معنى الحديث) a so lopa a pimbontalan o Allah sa kiyaadna Niyan ko Adam, na piyamamili, piyamorot (piyang extract) oto o Jibril phoon ko pimbarang a mga darpa ko donya.  Aya lopa a lbi a kawasa, odi na lbi a madakl a matatagoon sangkoto a 113 elements, na so lopa a masibokar (fertile soil), lopa a malbod a kaphagthoi ron a mangngto.  Giya ngkoto a lopa a masibokar (fertile soil) na aya khatoon on mga elements a pd sangkoto a 113 elements na sapolo ago walo (18 elements).  Giya ngkoto a lopa a masibokar (fertile soil) a khatoon on angkoto a 18 elements na giyoto i ‘sulalah’ (سُلَالَةٍ) “the best extract” a ron phoon a inadn so Adam.  Minggolalan ko ‘laboratory analysis’, na miyapariksa o mga scientests a aya mga ‘elements’ a khatoon ko lawas o manosia na sapolo ago walo (18 elements) a siran (exactly) so mga ‘elements’ a pkhatoon sii ko masibokar a lopa (fertile soil).  Giya ngkoto a 18 elements a pkhatoon ko lawas o manosia ago pkhatoon mambo ko masibokar a lopa (fertile soil) na: (1) Oxygen, (2) Hydrogen, (3) Carbon, (4) Nitrogen, (5) Sodium, (6) Magnesium, (7) Potassium, (8) Calcium, (9) Flouride, (10) Phosphorus, (11) Sulfur, (12) Iron, (13) Cobalt, (14) Chloride, (15) Copper, (16) Zinc, (17) Selenium ago (18) Iodine. So Qur’an na piyakam bokhag iyan so paratiyaya o mga kolompoag a bithowan iran sa “Darwinian theory of evolution” – paratiyaya oto (theory) a so kon so kiya adna ko manosia na resulta o kapkhasa salisalin o kaadn phoon sa amo (ape) na mimbaloy a manosiya (that man came into existence after passing through continuous genetic adaptations from an ape).  Oba giyoto i paratiyaya iran, na: “Siran bo ka marani siran on!”.</div>
+        <div id="share-links-12" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-13">
+        <div class="quran-text">ثُمَّ جَعَلْنَاهُ نُطْفَةً فِي قَرَارٍ مَّكِينٍ 
+            <span class="ayah-number">(13)</span>
+        </div>
+        <div class="translation">Oriyan iyan na biyaloy Ami (so kiyababadan on a) skaniyan na 'notfah', sii ko pthargan a masisiyap (so kandangan, rahim, matris).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:13" preload="none"
+                   data-surah="23"
+                   data-ayah="13"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:13')"
+                   onplay="highlightAyah('13')"
+                   onended="removeHighlight('13')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023013.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:13" onclick="togglePlay('23:13')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:13')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:13" value="0" max="100"
+         onchange="seekAudio('23:13', this.value)" style="width:200px;">
+  <span id="time-23:13" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:13" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:13', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(13)">Show Tafsir</button>
+            <button onclick="toggleFavorite(13)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(13)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '13',
+                                   'Oriyan iyan na biyaloy Ami (so kiyababadan on a) skaniyan na \'notfah\', sii ko pthargan a masisiyap (so kandangan, rahim, matris).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-13" class="tafsir">Datar o kiyaaloya on ko Ayah 32:8, na giya ngkoto a (جَعَلْنَاهُ) na adn a isosoln sangkoto a pagltan a (نَا) ago (هُ) a kalima a skaniyan so (نَسْلَ) – opama na giya ngkoto a (ثُمَّ جَعَلْنَاهُ نُطْفَةً) na mimbaloy a (ثُمَّ جَعَلْنَا نَسْلَهُ نُطْفَةً) “Oriyan iyan na biyaloy Ami (so kiyababadan on a) skaniyan na 'notfah'“.  Aya ‘notfah’, na so pphakapoon a mani (sperm) ko mama ko kinisaog iyan ko pphakapoon ko babay (eggs) sii ko kandang o mga ina.  Ikathay a kapmbaloy niyan a ‘'notfah'’?  Sii ko sold o pat polo ka gagawii (40 nights) datar o kiyaaloya on sangkai a hadith a khaaloy sangkai a phakatondog a Ayah 23:14. Antonaa i kapopoonan angkoto a mani (sperm)? Oriyan o kiyaadn o Adam, na minggolalan ko pangn’ngkn a pkhakan iyan a mga pangn’ngkn a pphakapoon ko lopa, na pphakapoon sangkoto a mga pangn’ngkn a pkhakan iyan so “sulalah” (extract – special element) a gii mbaloy a ‘mani’ (sperm) ago pkhipondo sii ko itado a bkhokong o Adam.  Oriyan iyan na piyamakay o Adam so Hawwa taman sa miyatago angkoto a ‘mani’ a phoon ko Adam sii ko kandang (rahim, matris) o Hawwa.  Sii sangkoto a kandang, na miyakam baratmowa roo so eggs (orak) o miyakapoon ko Hawwa ago giya ngkoto a ‘mani’ o miyakapoon ko Adam – na kagiya makazaog a dowa oto na mimbaloy a ‘notfah’ (نُطْفَةً) ko kiyapaka ipos o 40 nights.  Aya maana niyan na aya ‘notfah’ (نُطْفَةً) na dowa a ig a kiyathompokan o phoon san ko mama ago so phoon san ko babay, datar o kiyaaloya on ko Ayah 76:2.  Opama ka phakasaibarat sa od (seed) a inisaod (tiyambonan) ko lopa, na so ‘mani’ (sperm) na giyoto so od (seed) na so rahim (matris) na giyoto so lopa, na so pphakapoon ko babay a eggs (orak) na giyoto i fertilizer (datar o ig) a kiyasabapan sa kiyaopak o od na mimbowat on so pamomolan. Aya mitotoro anan na so Adam ago so mga moriyataw niyan na palaya siran inadn a phoon ko lopa: so Adam na inadn (directly) a phoon sa lopa, na so mga moriyataw niyan na inadn a phoon sa nganin a phoon ko lopa, a miyakan o manisya a mimbaloy a ‘mani’.</div>
+        <div id="share-links-13" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-14">
+        <div class="quran-text">ثُمَّ خَلَقْنَا النُّطْفَةَ عَلَقَةً فَخَلَقْنَا الْعَلَقَةَ مُضْغَةً فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنشَأْنَاهُ خَلْقًا آخَرَ ۚ فَتَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ 
+            <span class="ayah-number">(14)</span>
+        </div>
+        <div class="translation">Oriyan iyan na inadn Ami so 'notfah' (so pizaogan o ig o mama go so babay, na mimbaloy) a 'alaqa' (mbabathik a rogo a domdkt ko kandang).  Sa inadn Ami (pman) angkoto a alaqa' (na mimbaloy) a 'mudhghah' (sapo a saporon).  Sa inadn Ami (pman) so 'mudhghah' (na mimbaloy) a mga tolan.  (Oriyan oto) Na biyongkosan Ami so mga tolan sa sapo.  Oriyan iyan na inadn Ami skaniyan a kaadn a salakaw. Na miyasotisoti (sayana ko madakl i mapiya) so Allah, a lbi a mapiya ko mga pphangadn (gii mamakam baal).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:14" preload="none"
+                   data-surah="23"
+                   data-ayah="14"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:14')"
+                   onplay="highlightAyah('14')"
+                   onended="removeHighlight('14')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023014.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:14" onclick="togglePlay('23:14')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:14')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:14" value="0" max="100"
+         onchange="seekAudio('23:14', this.value)" style="width:200px;">
+  <span id="time-23:14" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:14" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:14', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(14)">Show Tafsir</button>
+            <button onclick="toggleFavorite(14)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(14)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '14',
+                                   'Oriyan iyan na inadn Ami so \'notfah\' (so pizaogan o ig o mama go so babay, na mimbaloy) a \'alaqa\' (mbabathik a rogo a domdkt ko kandang).  Sa inadn Ami (pman) angkoto a alaqa\' (na mimbaloy) a \'mudhghah\' (sapo a saporon).  Sa inadn Ami (pman) so \'mudhghah\' (na mimbaloy) a mga tolan.  (Oriyan oto) Na biyongkosan Ami so mga tolan sa sapo.  Oriyan iyan na inadn Ami skaniyan a kaadn a salakaw. Na miyasotisoti (sayana ko madakl i mapiya) so Allah, a lbi a mapiya ko mga pphangadn (gii mamakam baal).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-14" class="tafsir">Ilaya ngka so ayat ago so osayan so Ayah 22:5 ago so Ayah 40:67. Aya kiyaza pangkata ko kiya adna o Allah ko mga manosia, di ron pd so Eysa ago so Hawwa, na pito pangkat (7 stages), datar o kiyaaloya on sangkoto a miyaipos a Ayah 23:12, 23:13 ago sangkai a 23:14.  Paganay(1) ron na phoon sa lopa (مِنْ طِينٍ) Ayah 23:12, maana so kiyaadna ko apoapo iran a Adam.  Sii ko oriyan o kiyaadna o Allah ko Adam a phoon sa lopa, na minipangkat na so kiya adna Niyan ko mga moriyataw o Adam (di ron pd so Eysa) a miyakang golalan sa (2) (نُطْفَةً) ‘notfah’ Ayah 23:13, (pizaogan o ig o mama go so babay).  Minipangkat pman na giya ngkai a miyanga aaloy sangkai a Ayah 23:14, maana sii ko kiyaipos o 40 nights (datar o kiyaaloya on sa Hadith) na giya ngkoto a (نُطْفَةً) na (3) mimbaloy a (عَلَقَةً) ‘alaqah’ (mbabathik a rogo a domdkt ko kandang).  Sa minipangkat pman oto, na sii ko kiyaipos o 40 nights, na giya ngkoto a (عَلَقَةً) ‘alaqah’ na (4) mimbaloy a (مُضْغَةً) 'mudhghah' (saporon a datar o sipa a sapo).  Minipangkat pman oto na giya ngkoto a (مُضْغَةً) 'mudhghah' na (5) mimbaloy a (عِظَام) ‘idham’ (mga tolan).  Minipangkat pman oto na (6) “biyongkosan Ami (a tig o Allah) so mga tolan sa sapo” (فَكَسَوْنَا الْعِظَامَ لَحْمًا).  Minipangkat pman oto na (7) iniiyop o Jibril sangkoto a ikaogat so niyawa sa mimbaloy a isa a kaadn (ثُمَّ أَنْشَأْنَاهُ خَلْقًا آخَرَ) “sa miyaadn Ami skaniyan a kaadn a salakaw”. Giya ngkanan a miyaaloy a kiyaza pangkata ko kiyaadna o Allah ko manosiya, na miyaaloy pn o Nabi (ﷺ) sii sa hadith (إِنَّ أَحَدَكُمْ لَيُجْمَعُ خَلْقُهُ فِي بَطْنِ أُمِّهِ أَرْبَعِينَ يَوْمًا نُطْفَةً ثُمَّ يَكُونُ عَلَقَةً مِثْلَ ذلِكَ ثُمَّ يَكُونُ مُضْغَةً مِثْلَ ذلِكَ ثُمَّ يُرْسَلُ إِلَيْهِ الْمَلَكُ فَيَنْفُخُ فِيهِ الرُّوحَ وَيُوْمَرُ بِأَرْبَعِ كَلِمَاتٍ رِزْقِهِ وَأَجَلِهِ وَعَمَلِهِ وَهَلْ هُوَ شَقِيٌّ أَوْ سَعِيدٌ ثُمَّ يُنْفَخُ فِيهِ الرُّوح) “Mataan a so (nganin a piyanagipoonan a) kiyaadna ko oman i isa rkano, na miyalanggay ko kandangan o ina iyan sa miyaka 40 ka gagawii (ko btad a) ‘not’fah’, oriyan iyan na mimbaloy a ‘alaqa’ (mbabathik a rogo) sa datar iyan (a 40 a gagawii), oriyan iyan na mimbaloy a ‘mudgha’ (saporon a datar o sipa a sapo) sa datar iyan (a 40 a gagawii), oriyan (o kaipos angkoto a 120 nights) iyan na sogoon on o Allah so malaikat (Jibril) sa iyop iyan on so niyawa go isogo on so pat a shay’: (1) so khabaloy a rizki niyan, (2) so khabaloy a phagamaln iyan, (3) so maphagomor iyan ago (4) ino phakadaya (ikhalimo) skaniyan antawaa ka khargnan (ko kaphagintaw) oriyan iyan na iiyop rkaniyan so niyawa”. Sii ko kaipos angkoto a 120 night ipoon ko kalpas iyan ko babay, na magdam dn o babay a gii khaokaog angkoto a ikaogat iyan, sabap sa kiyamansok iron sa niyawa.  Giya ngkoto a 120 nights na inomanan sa 10 more nights, na giyoto i kinowa a pasodan ko ‘iddah o babay a miyabalo a di maphangaroma pasin taman sa di makalpas so 130 nights odi na 4 months ago 10 nights para masigorado a kna ba skaniyan mawgat.  Sa opama ka mawgat na kha-extend (phakalayat) so ‘iddah iyan ko oriyan o kimbawataan iyan sangkoto a ikaogat iyan. (فَتَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ) “Na miyasotisoti (sayana ko madakl i mapiya) so Allah, a lbi a mapiya ko pphamangadn”– so kapangadn (تَخلِیق) na sii bo anan a galbk (exclusive) ko Allah. Da a phakaadn a salakaw Rkaniyan.  Ogaid na ino ptharoa a (اللَّهُ أَحْسَنُ الْخَالِقِينَ) “so Allah, i lbi a mapiya ko pphamangadn”?.  Aya kiyatharoa roo o Allah na sabap sa so manosia na pphaka adn mambo, nggolalan ko gii niyan kapakambaal, imbinto, ogaid na so pkhaadn iyan, datar o pdang (sword), trak, walay, bread, etc. na adn a phoonan iyan a (raw) material a pd ko mga inadn (material) o Allah – giyoto i tig iran a “manufacturing” odi na “Inventing”.  Ogaid, na biyals pn oto o Allah angkoto a nganin a gii mbaalan o manosia a pd sa kapangadn (تَخلِیق) – datar miyaaloy ko Ayah 29:17 (وَتَخْلُقُونَ إِفْكًا) “go phagadng kano (pphangmbaal) kano sa kabokhag”.  Giyoto i sabap a “so Allah, i lbi a mapiya ko pphamangadn”, sabap sa isa on na, kna ba datar o kapphaka adn o manosia, na so Allah na kna ba skaniyan makakhi kinanglan sa (raw) material para makamoayan so pagadnn Iyan.  Kna ba pndokawi ko kapphangadn Iyan, kna ba pnayaw sa oras, gawii, olan, ragon, etc. kna ba kinanglan sa ‘documentation’ (design, drawings, estimates, etc.) para mbaloy phiyapiya so pagadnn Iyan, ka aya bo a ipphangadn Iyan na sataga a katharo a “Kon” (كُنْ), na anda dn i kilapiatn Iyan roo na miyaadn dn so nganin a kabaya Iyan a maadn.</div>
+        <div id="share-links-14" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-15">
+        <div class="quran-text">ثُمَّ إِنَّكُم بَعْدَ ذَٰلِكَ لَمَيِّتُونَ 
+            <span class="ayah-number">(15)</span>
+        </div>
+        <div class="translation">Oriyan iyan na mataan a skano ko oriyan angkoto (a kiyaadna rkano), na tangkd a miyamatay dn.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:15" preload="none"
+                   data-surah="23"
+                   data-ayah="15"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:15')"
+                   onplay="highlightAyah('15')"
+                   onended="removeHighlight('15')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023015.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:15" onclick="togglePlay('23:15')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:15')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:15" value="0" max="100"
+         onchange="seekAudio('23:15', this.value)" style="width:200px;">
+  <span id="time-23:15" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:15" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:15', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(15)">Show Tafsir</button>
+            <button onclick="toggleFavorite(15)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(15)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '15',
+                                   'Oriyan iyan na mataan a skano ko oriyan angkoto (a kiyaadna rkano), na tangkd a miyamatay dn.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-15" class="tafsir">Oriyan o kiyapaka rinayaga o Allah ko kiyapangadn iyan, na piyakaiktiyar Iyan so mga manosya sa mataan a sii ko oriyan oto ko dibo mathay, polo odi na sampayn ka pn sa gatos ragon, na phamatay siran bo.</div>
+        <div id="share-links-15" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-16">
+        <div class="quran-text">ثُمَّ إِنَّكُمْ يَوْمَ الْقِيَامَةِ تُبْعَثُونَ 
+            <span class="ayah-number">(16)</span>
+        </div>
+        <div class="translation">Oriyan iyan na mataan a skano ko alongan a Qiyamah, na pagoyagn kano.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:16" preload="none"
+                   data-surah="23"
+                   data-ayah="16"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:16')"
+                   onplay="highlightAyah('16')"
+                   onended="removeHighlight('16')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023016.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:16" onclick="togglePlay('23:16')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:16')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:16" value="0" max="100"
+         onchange="seekAudio('23:16', this.value)" style="width:200px;">
+  <span id="time-23:16" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:16" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:16', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(16)">Show Tafsir</button>
+            <button onclick="toggleFavorite(16)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(16)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '16',
+                                   'Oriyan iyan na mataan a skano ko alongan a Qiyamah, na pagoyagn kano.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-16" class="tafsir">Sii sangkoto a alongan a Qiyamah, na pagadnn kano o Allah, hay mga manosia sa kapangadn a bago, datar o kiyaaloya on ko Ayah 29:20 (ثُمَّ اللَّهُ يُنْشِئُ النَّشْأَةَ الْآخِرَةَ) “Oriyan iyan na so Allah na phangadn sa kapangadn a mori (ko gawii a kaphangokom)”.</div>
+        <div id="share-links-16" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-17">
+        <div class="quran-text">وَلَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَائِقَ وَمَا كُنَّا عَنِ الْخَلْقِ غَافِلِينَ 
+            <span class="ayah-number">(17)</span>
+        </div>
+        <div class="translation">Go ibt ka mataan a sabnar a inadn Ami ko kaporoan iyo so pito a mga lalan (pito a mga langit); go da kami mabaloy sii ko mga kaadn a mabibimban (kindadaraynon).</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:17" preload="none"
+                   data-surah="23"
+                   data-ayah="17"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:17')"
+                   onplay="highlightAyah('17')"
+                   onended="removeHighlight('17')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023017.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:17" onclick="togglePlay('23:17')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:17')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:17" value="0" max="100"
+         onchange="seekAudio('23:17', this.value)" style="width:200px;">
+  <span id="time-23:17" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:17" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:17', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(17)">Show Tafsir</button>
+            <button onclick="toggleFavorite(17)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(17)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '17',
+                                   'Go ibt ka mataan a sabnar a inadn Ami ko kaporoan iyo so pito a mga lalan (pito a mga langit); go da kami mabaloy sii ko mga kaadn a mabibimban (kindadaraynon).')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-17" class="tafsir">Sii ko kiyaipos o kiyaaloya o Allah sa kiyaadna Niyan ko mga manosia, na aya pman a inaloy Niyan na so kiyaadna Niyan ko pito a mga langit.  Na anda i margn a inadn sangkoto a dowa: so manosia antawaa ka so pito a langit?  (لَخَلْقُ السَّمَـوَتِ وَالاٌّرْضِ أَكْـبَرُ مِنْ خَلْقِ النَّاسِ) “Mataan dn a so kiya adna ko mga langit ago so lopa na lbi a mala a di so kiya adna ko mga taw” Ayah 40:57. (وَمَا كُنَّا عَنِ الْخَلْقِ غَافِلِينَ) “go da kami mabaloy sii ko mga kaadn a mabibimban (kindadaraynon)” – so Allah na sii ko oriyan o kiyaadna Niyan ko mga oripn Iyan, na kna ba miyabimban, kna ba Niyan siran inindaraynon, inonta na Skaniyan na da dn maparin sa saprk bo sa mata a kasisiyapa Niyan kiran ago miyadn sa mga lalan, mga khasabapan (means) a kapnggolalanan o limo iyan kiran.  Sabap roo na datar o kakhaaloya on sangkai a phakatondog a Ayah 23:18, a inadn Iyan kiran so mga kawang, a pkhapoonan a oran a pthoron ko lopa na phagtho ago phlombay mambo so mga pamomolan ko lopa na pphakapoon on a mga pangn’ngkn a ipkhaoyag iran.  Sii ko karangkom iyan na langowa kaadn o Allah, so mga palaw, mga kalodan, mga binatang, mga pamomolan, mga kalasan, etc. etc. na piyamangadn oto a piyakaphasiyonot ko kanggonai ron o manosia.</div>
+        <div id="share-links-17" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-18">
+        <div class="quran-text">وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً بِقَدَرٍ فَأَسْكَنَّاهُ فِي الْأَرْضِ ۖ وَإِنَّا عَلَىٰ ذَهَابٍ بِهِ لَقَادِرُونَ 
+            <span class="ayah-number">(18)</span>
+        </div>
+        <div class="translation">Go pphakatoron Kami phoon ko kawang sa ig a madidiyangka, na piyakatarg Ami skaniyan ko lopa; na mataan a Skami sii ko kaylang oto na sabnar a Gaos Ami.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:18" preload="none"
+                   data-surah="23"
+                   data-ayah="18"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:18')"
+                   onplay="highlightAyah('18')"
+                   onended="removeHighlight('18')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023018.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:18" onclick="togglePlay('23:18')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:18')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:18" value="0" max="100"
+         onchange="seekAudio('23:18', this.value)" style="width:200px;">
+  <span id="time-23:18" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:18" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:18', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(18)">Show Tafsir</button>
+            <button onclick="toggleFavorite(18)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(18)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '18',
+                                   'Go pphakatoron Kami phoon ko kawang sa ig a madidiyangka, na piyakatarg Ami skaniyan ko lopa; na mataan a Skami sii ko kaylang oto na sabnar a Gaos Ami.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-18" class="tafsir">Pd sa da kindaraynonn o Allah ko mga kaadn Iyan, ko kiyatharoa Niyan on sangkoto a miyaipos a Ayah 23:17 a (وَمَا كُنَّا عَنِ الْخَلْقِ غَافِلِينَ) “go da kami mabaloy sii ko mga kaadn a mabibimban (kindadaraynon)”, na pitharo Iyan a “Pphakatoron Kami phoon ko kawang sa ig” (وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً).  Pphakatoron Kami phoon ko kawang sa “ig a madidiyangka” (مَاء بِقَدَرٍ) – ko diyangka a kna ba sobra a khapakay a makakaid ko mga lopa (babasoka) ago sii ko mga walay ago kna ba pman ba maito a di pthoon a ipamakayg ko mga prpran (crops) ago mga pamomolan, ogaid na sii ko diyanka a thatangkai a makaphamakaig on so mga pamomolan, phakainom on so mga manosia, mga ayam, mga binatang, etc. ago so mga pd a pagosaran on. So Allah na lbi a mala i gagaw ko mga kaadn Iyan ka pphakatoronn Iyan so ig, na kna a ba gii mbabagiyo (hindi nagbabaha) inonta bo ko darpa a kabaya o Allah a kambabagiyowi ron.  Opama ka so makhi kinanglan o mga manosia ko ig sii ko salongan na mabaloy a pkhitoron kiran nggolalan sa oran oman mapita, na btad oto a di kapaparo sabap sa oman mapita na moran (mimbarat!) – miyapapas kiran samanoto so kapagintaw a mamara.  Opama pman ka mabaloy kiran so oran a makaysa bo ko oman 6 months (ibarat), na aya maana niyan na oman moran na makaphamondo siran on, ko kailangan iran sii ko 6 months sabap sa aya bo pman a NEXT a kapagorani kiran na after 6 months – na aya problima, na da a mga pondowan iran (storage) a khapondowan iran ko ig a kinanglan iran ko 6 months.  Ikadowa a problima, na giya ngkoto a ig si ko sold o 6 months na kharmbis, mbalingan a bacteria, etc.  Sabap roo na “na piyakatarg Ami skaniyan (a ig, a tig o Allah) ko lopa” – igira a miyoran na pznp so ig ago ptharg ko lopa ko kathay a mattndo, na mapphaka lombay niyan so mga pamomolan a mapamomola ko liyawaw niyan. So limo o Allah ko mga kaadn Iyan na di khakowa pandapat.  Igira a miyoran, na pznp ko lopa so oran, na pkhasibokar iyan so lopa, na phlombay so mga pamomolan, na so di ron znp na ptoga ago pkhatimo ko mga ranaranaw (datar a Lake Lanao) odi na mga plit (dam), datar a Anggat Dam sii sa Luzon Area.  Sii ko mga ingd a mga katnggawan, datar a Europe, a da gaid a mga ranaranaw ron, na aya limo kiran o Allah a kapkhipondo o mala a ig para ko mapkhinanglan iran ko sold o mga olanolan, odi na ragon, na so oran na pmbalowin kiran o Allah a mga yelo (ice odi na snow) a pkhipondo ko mga poro o mga palaw ago sii ko mga balintad.  Na maitomaito na pkhatno angkoto a mga ‘ice’ na pznp sa didalm a lopa sa pkhaadn sa didalm a lopa so mga roroni a okita a ig (channels), kakar, oriyan iyan na pliphowak ko mga bowalan angkoto a ig oriyan iyan na tomoga a mga roroni a mga lawasayg, a ron pphakasagb so mga taw.  Sii ko mga darpa a da a ba on mga bowalan, na pkhalot so mga taw, taman sa amay ka raotn angkoto a ig sa didalm a lopa, na pagatoran iran angkoto a kiyalotan iran, sa mbaloy a paridi a sagban iran sa ig.  Mga pd badn anan ko madakl a okit a kapkhaparoliya o mga taw ko ig a “piyakatarg Ami (a tig o Allah) skaniyan ko lopa” (فَأَسْكَنَّاهُ فِي الْأَرْ‌ضِ). Sangkai a masa a technology, na so mga taw na phagosar siran sa mga ‘hand pump’, ombak a manomano sii ko mga darpa a mitataog odi na phagosar siran sa mga ‘deep-well pumps’ sii ko mga darpa a riyaot a electricity.  Pd pn a okit sangkai a masa a ‘modern technology’, na so mga kawasa a mga ingd, datar a Saudi Arabia, Qatar, etc. na aya inomn iran na giya dn a ragat a ig a matimos na phag process niran ko mga factoriya a bithowan sa ‘disalination plants’, na pkhada sangkoto a ig a ragat so timos iyan taman sa mbaloy a ig a inomn.  Ilaya ngka pn so osayan ko Ayah 25:48. (مَاءً بِقَدَرٍ فَأَسْكَنَّاهُ فِي الْأَرْضِ) “ig a madidiyangka, na piyakatarg Ami skaniyan ko lopa” – aya oto a mapipikir sangkoto a miyaaloy a ‘ig’ (مَاءً) na so oran a pphakatoronn o Allah ko mbidabida a mga masa, ogaid na khapakay pn a isa a mapipikir roo na so intiro a ig a piyakatoron Iyan ko donya sii pn ko masa a kiyaadna Niyan ko donya a inipondo Niyan ko mga ragat, mga kalodan, mga ranaranaw, ko mga lawasayg, ko mga bowalan, ago so mga pondowan (storage) Iyan sa didalm a lopa.  Giya ngkoto a ig matatago ko mga pondoan (storage) o Allah na katatarotopan iyan so kala a miyakhinanglan o manosia a ig gowani, so makhi kinanglan iyan sangkai a kapapantagan ago so mapkhinanglan iyan ko phaka talingoma a masa taman dn ko bangkit.  Sii ko kaphakagaga o Allah, na giya ngkoto a ig na “ig a madidiyangka” (مَاءً بِقَدَرٍ) sa da a pkhalbat on, go di dn kinanglan i ba omani.  Skaniyan dn so ig a so igira a mosim a pangolaon so donya ‘summer’, na ‘phag evaporate’ (pkhisaog ko ndo ko btad a spot [water vapor]), oriyan iyan na komasoy ko donya anggolalabn sa oran.  Sa giyoto dn i gii makhakaso kasoy a so pkhalbat on, a pkhaosar o mga kaadn o Allah: mga pamomolan, mga binatang taman so pkhainom on o mga manosia, na phag evaporate pman, na matimo sa kawang na maolog pman ko donya nggolalan sa oran – ilaya ngka so marawa a osayan san sii ko Ayah 2:24. Sii ko ilmo a Science na miyapariksa on so antonaa i ‘composition’, antonaa i piyakam babid sa kiyaadn o ig – a skaniyan so piyakambabid a ‘hydrogen’ ago ‘oxygen’ (H2O), sa di dn oto khabaroba sii ko tlo a btad: sii ko kababaloy o ig a ‘liquid’ (pthoga), sii ko kababaloy niyan a ‘solid’ (ice) ago sii ko kababaloy niyan a spot, ‘gas’ (vapor).  Da dn a ikakhada o ig ka o pakadidi angka na mimbaloy a ‘water vapor’ sa mitapi ko ndo, na thana bo a ‘water droplets’ (mga thak), na o baloya ngka a yelo (ice), na khatno bo oto na thoga a ig.  Di dn khagaga o manosia i ba niyan mapakada angkoto a ig – kna ba datar ibarat o kayo a totongn ka na miyagombi ombi, na didn khasoy ko kakakayo niyan.  Ogaid na “Mataan a Skami (a tig o Allah na) sii ko kaylang angkoto (a ig) na sabnar a Gaos Ami” (وَإِنَّا عَلَى ذَهَابٍ بِهِ لَقَادِرُونَ) – datar anan so katharo o Allah sii ko Ayah 67:30 a (قُلْ أَرَأَيْتُمْ إِنْ أَصْبَحَ مَاؤُكُمْ غَوْرًا فَمَنْ يَأْتِيكُمْ بِمَاءٍ مَعِينٍ) “Tharo angka (hay Mohammad) a: ‘Ba niyo da manggdagda amay ka mabaloy so ig iyo a somnp (mamara), na antawaa i katalingomaan kano niyan sa ig a phragiray?’”.  Datar pn anan so Ayah 18:41.</div>
+        <div id="share-links-18" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-19">
+        <div class="quran-text">فَأَنشَأْنَا لَكُم بِهِ جَنَّاتٍ مِّن نَّخِيلٍ وَأَعْنَابٍ لَّكُمْ فِيهَا فَوَاكِهُ كَثِيرَةٌ وَمِنْهَا تَأْكُلُونَ 
+            <span class="ayah-number">(19)</span>
+        </div>
+        <div class="translation">Na miyadn Kami para rkano sabap rkaniyan (a ig) sa mga asinda a pd sa mga kayo a korma go mga anggor.  Adn a bagian iyo sii sangkoto (a mga asinda) a mga onga a madakl!  Go so sabaad on na pkhn iyo.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:19" preload="none"
+                   data-surah="23"
+                   data-ayah="19"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:19')"
+                   onplay="highlightAyah('19')"
+                   onended="removeHighlight('19')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023019.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:19" onclick="togglePlay('23:19')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:19')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:19" value="0" max="100"
+         onchange="seekAudio('23:19', this.value)" style="width:200px;">
+  <span id="time-23:19" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:19" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:19', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(19)">Show Tafsir</button>
+            <button onclick="toggleFavorite(19)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(19)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '19',
+                                   'Na miyadn Kami para rkano sabap rkaniyan (a ig) sa mga asinda a pd sa mga kayo a korma go mga anggor.  Adn a bagian iyo sii sangkoto (a mga asinda) a mga onga a madakl!  Go so sabaad on na pkhn iyo.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-19" class="tafsir">Inoto aya bo pagaloya sangkoto a mga asinda na kayo a korma ago mga anggor a obadi gophoon matharo a asinda na khatoon on so pithibarangan a mga onga a sapad?  Aya smbag na sabap sa giya ngkanan a dowa na aya ‘popular’ (katotokawan o mga taw) ago komakalilid sii sa ingda Hijaz (KSA) sangkoto a masa o Nabi.</div>
+        <div id="share-links-19" class="share-links" style="display:none;"></div>
+    </div>
+        <div class="ayah-block" id="ayah-20">
+        <div class="quran-text">وَشَجَرَةً تَخْرُجُ مِن طُورِ سَيْنَاءَ تَنبُتُ بِالدُّهْنِ وَصِبْغٍ لِّلْآكِلِينَ 
+            <span class="ayah-number">(20)</span>
+        </div>
+        <div class="translation">Go (miyadn Kami para rkano sabap rkaniyan a ig sa) kayo (a zayton) a phagtho sa palaw a Sayna' (Mount Sinai), a phagtho (phagonga ago pkhakowaan) sa lana (lana zayton (olive oil)), go dilota a bagian o gii khakan.</div>
+
+        <div class="ayah-actions">
+            <!-- Enhanced Audio Player -->
+            <audio id="audio-23:20" preload="none"
+                   data-surah="23"
+                   data-ayah="20"
+                   data-reciter="Alafasy"
+                   ontimeupdate="updateProgress('23:20')"
+                   onplay="highlightAyah('20')"
+                   onended="removeHighlight('20')">
+                <source src="https://verses.quran.com/Alafasy/mp3/023020.mp3" type="audio/mp3">
+            </audio>
+
+            <button id="btn-play-23:20" onclick="togglePlay('23:20')">▶️ Play</button>
+            <button onclick="stopAudio('audio-23:20')">⏹ Stop</button>
+            
+<!-- Progress bar + Time Display -->
+<div style="display:inline-block; vertical-align:middle;">
+  <input type="range" id="progress-23:20" value="0" max="100"
+         onchange="seekAudio('23:20', this.value)" style="width:200px;">
+  <span id="time-23:20" class="time-display">0:00 / 0:00</span>
+</div>
+            
+            <!-- Volume -->
+            <input type="range" id="volume-23:20" min="0" max="1" step="0.05" value="1"
+                   onchange="setVolume('23:20', this.value)">
+        </div>
+
+        <div class="ayah-actions">
+            <!-- Existing Buttons -->
+            <button onclick="toggleTafsir(20)">Show Tafsir</button>
+            <button onclick="toggleFavorite(20)">🖤 Add to Favorites</button>
+            <button onclick="copyAyah(20)">📋 Copy</button>
+            <button class="share-btn"
+                onclick="shareAyah('23',
+                                   '20',
+                                   'Go (miyadn Kami para rkano sabap rkaniyan a ig sa) kayo (a zayton) a phagtho sa palaw a Sayna\' (Mount Sinai), a phagtho (phagonga ago pkhakowaan) sa lana (lana zayton (olive oil)), go dilota a bagian o gii khakan.')">
+                Share
+            </button>
+        </div>
+
+        <div id="tafsir-20" class="tafsir">Aya maana a ‘tur’ (طُور) a tig o mga pananafsir, na palaw a adn a mga kayo ron (pamomolan).  Aya basa pman ko palaw a da a mga kayo ron na ‘jabal’ (جَبَلْ).  Giya ngkoto a miyaaloy a palaw a Sayna' (Mount Sinai), na giyoto dn so palaw a ron inimbityarai o Allah so Mosa na sii sangkoto a palaw a Sayna ago giya ngkoto a mliliyota on, na ndadakl so m’tho on a mga pamomolan a zayton.  Miyapanothol a skaniyan i kayo a pagampaganay a pamomolan a mtho ko kiyaipos o kinigald a donya ko masa o nabi Nuh.  Giyoto i sabap a adn a khatoon ka a kayo a zayton a sobra dn 2000 years a idad iyan, datar o mga kayo a zayton sa Palistine a aya paratiyaya o mga taw na mga oyagoyag pn oto ko masa o Nabi Eysa.  Inaloy o Nabi (ﷺ) so pamomolan a zayton a skaniyan na kayo a pakambabarakatn: (ايْتَدِمُوا بِالزَّيْتِ وَادَّهِنُوا بِهِ فَإِنَّهُ يَخْرُجُ مِنْ شَجَرَةٍ مُبَارَكَة) “Ndilotaan iyo (palamann iyo, pamalapaan iyo) so lana a zayton, go gii niyo planaan (sa lawas) ka mataan a skaniyan na sii makapopoon ko kayo a (zayton a) pakambabarakatn”.</div>
+        <div id="share-links-20" class="share-links" style="display:none;"></div>
+    </div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <strong>1</strong><a href='https://maranaw.com/surah.php?surah=23&amp;page=2'>2</a><a href='https://maranaw.com/surah.php?surah=23&amp;page=3'>3</a><a href='https://maranaw.com/surah.php?surah=23&amp;page=4'>4</a><a href='https://maranaw.com/surah.php?surah=23&amp;page=5'>5</a><a href='https://maranaw.com/surah.php?surah=23&amp;page=6'>6</a><a href='https://maranaw.com/surah.php?surah=23&amp;page=6'>Last</a></div>
+
+</main>
+<hr>
+<footer class="site-footer">
+    <p style="text-align: center;">© 2025 Maranaw Tafsir by Abu Ahmad Tamano. | Site developed by Ashary Tamano. | All rights reserved.</p>
+</footer>
+
+<!-- Scroll to Top -->
+<button onclick="scrollToTop()" id="scrollBtn" style="display:none;position:fixed;bottom:40px;right:30px;z-index:99;font-size:18px;border:none;outline:none;background-color:#000;color:white;cursor:pointer;padding:15px;border-radius:50%;">⬆</button>
+
+<script>
+
+// Restore saved reciter on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const savedReciter = localStorage.getItem("selectedReciter");
+  if (savedReciter) {
+    document.getElementById("reciter").value = savedReciter;
+    changeReciter(savedReciter);
+  }
+});
+
+// Scroll-to-top
+let scrollBtn = document.getElementById("scrollBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) scrollBtn.style.display = "block";
+    else scrollBtn.style.display = "none";
+};
+function scrollToTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
+
+// 3-toggle buttons
+const btnArabic = document.getElementById("btn-arabic");
+const btnMaranao = document.getElementById("btn-maranao");
+const btnBoth = document.getElementById("btn-both");
+
+btnArabic.addEventListener('click', () => { setView('arabic'); setActive(btnArabic); });
+btnMaranao.addEventListener('click', () => { setView('maranao'); setActive(btnMaranao); });
+btnBoth.addEventListener('click', () => { setView('both'); setActive(btnBoth); });
+
+function setView(view){
+    const arabicTexts = document.querySelectorAll(".quran-text");
+    const maranaoTexts = document.querySelectorAll(".translation");
+    if(view==='arabic'){
+        arabicTexts.forEach(t=>t.style.display='block');
+        maranaoTexts.forEach(t=>t.style.display='none');
+    } else if(view==='maranao'){
+        arabicTexts.forEach(t=>t.style.display='none');
+        maranaoTexts.forEach(t=>t.style.display='block');
+    } else {
+        arabicTexts.forEach(t=>t.style.display='block');
+        maranaoTexts.forEach(t=>t.style.display='block');
+    }
+}
+function setActive(btn){
+    [btnArabic, btnMaranao, btnBoth].forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+}
+setView('both');
+
+// -------------------- Enhanced Audio Functions --------------------
+let currentAudio = null;
+
+function togglePlay(key) {
+  const audio = document.getElementById("audio-" + key);
+  const btn = document.getElementById("btn-play-" + key);
+
+  if (audio.paused) {
+    if (currentAudio && currentAudio !== audio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      const oldKey = currentAudio.getAttribute("data-surah") + ":" + currentAudio.getAttribute("data-ayah");
+      document.getElementById("btn-play-" + oldKey).innerText = "▶️ Play";
+      removeHighlight(currentAudio.getAttribute("data-ayah"));
+    }
+    audio.play();
+    currentAudio = audio;
+    btn.innerText = "⏸ Pause";
+  } else {
+    audio.pause();
+    btn.innerText = "▶️ Play";
+  }
+}
+
+function stopAudio(id) {
+  const audio = document.getElementById(id);
+  const ayah = audio.getAttribute("data-ayah");
+  audio.pause();
+  audio.currentTime = 0;
+  document.getElementById("btn-play-" + audio.getAttribute("data-surah") + ":" + ayah).innerText = "▶️ Play";
+  removeHighlight(ayah);
+}
+
+function updateProgress(key) {
+  const audio = document.getElementById("audio-" + key);
+  const progress = document.getElementById("progress-" + key);
+  const timeLabel = document.getElementById("time-" + key);
+
+  if (audio.duration) {
+    progress.value = (audio.currentTime / audio.duration) * 100;
+
+    // Format time
+    const cur = formatTime(audio.currentTime);
+    const dur = formatTime(audio.duration);
+    timeLabel.innerText = `${cur} / ${dur}`;
+  }
+}
+
+function formatTime(sec) {
+  const minutes = Math.floor(sec / 60) || 0;
+  const seconds = Math.floor(sec % 60) || 0;
+  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+}
+
+function seekAudio(key, value) {
+  const audio = document.getElementById("audio-" + key);
+  if (audio.duration) {
+    audio.currentTime = (value / 100) * audio.duration;
+  }
+}
+
+function setVolume(key, value) {
+  const audio = document.getElementById("audio-" + key);
+  audio.volume = value;
+}
+
+function highlightAyah(ayah) {
+  const block = document.getElementById("ayah-" + ayah);
+  block.classList.add("playing");
+
+  // Auto-scroll only if toggle is ON
+  const autoScroll = document.getElementById("autoScrollToggle").checked;
+  if (autoScroll) {
+    setTimeout(() => {
+      block.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 150); // 150ms delay to feel natural
+  }
+}
+
+function removeHighlight(ayah) {
+  document.getElementById("ayah-" + ayah).classList.remove("playing");
+}
+
+// Continuous play
+document.querySelectorAll("audio").forEach((audio, index, list) => {
+  audio.onended = function() {
+    const continuousPlay = document.getElementById("continuousPlayToggle").checked;
+    removeHighlight(audio.getAttribute("data-ayah"));
+    if (continuousPlay) {
+      let next = list[index + 1];
+      if (next) {
+        const nextKey = next.getAttribute("data-surah") + ":" + next.getAttribute("data-ayah");
+        togglePlay(nextKey);
+      }
+    }
+  };
+});
+
+// Change reciter dynamically
+function changeReciter(reciter) {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio = null;
+  }
+
+  // Save chosen reciter
+  localStorage.setItem("selectedReciter", reciter);
+
+  document.querySelectorAll("audio").forEach(audio => {
+    let surah = audio.getAttribute("data-surah").padStart(3, "0");
+    let ayah = audio.getAttribute("data-ayah").padStart(3, "0");
+    let newUrl = "";
+
+    if (reciter === "Alafasy") {
+      newUrl = `https://verses.quran.com/Alafasy/mp3/${surah}${ayah}.mp3`;
+    } else if (reciter === "Sudais") {
+      newUrl = `https://verses.quran.com/Sudais/mp3/${surah}${ayah}.mp3`;
+    } else if (reciter === "Ghamdi") {
+      newUrl = `https://everyayah.com/data/Ghamadi_40kbps/${surah}${ayah}.mp3`;
+    } else if (reciter === "Rifai") {
+      newUrl = `https://everyayah.com/data/Hani_Rifai_192kbps/${surah}${ayah}.mp3`;
+    }
+
+    audio.querySelector("source").src = newUrl;
+    audio.setAttribute("data-reciter", reciter);
+    audio.load();
+  });
+}
+
+// -------------------- Existing Functions --------------------
+function toggleTafsir(id) {
+    const tafsirDiv = document.getElementById("tafsir-" + id);
+    const button = tafsirDiv.previousElementSibling.querySelector("button");
+
+    if (tafsirDiv.style.display === "none" || tafsirDiv.style.display === "") {
+        tafsirDiv.style.display = "block";
+        button.innerText = "Hide Tafsir";
+    } else {
+        tafsirDiv.style.display = "none";
+        button.innerText = "Show Tafsir";
+    }
+}
+
+function toggleFavorite(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "23. Al-Mu\'minun (المُؤْمِنُون) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+
+    let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const exists = favorites.find(f => f.surah === surah && f.quran === quran);
+
+    if (exists) {
+        favorites = favorites.filter(f => !(f.surah === surah && f.quran === quran));
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        alert("Removed from Favorites");
+    } else {
+        favorites.push({ id, surah, quran, translation });
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        alert("Added to Favorites.\n\nClick 🖤 View Favorites above to see your saved ayahs.");
+    }
+}
+
+function copyAyah(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "23. Al-Mu\'minun (المُؤْمِنُون) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+    const tafsir = document.getElementById("tafsir-" + id).innerText;
+
+    const text = surah + "\n" + quran + "\n" + translation + "\n" + tafsir;
+    navigator.clipboard.writeText(text);
+    alert("Copied to clipboard");
+}
+
+function shareAyah(id) {
+    const ayahDiv = document.getElementById("ayah-" + id);
+    const surah = "23. Al-Mu\'minun (المُؤْمِنُون) - Ayah " + id;
+    const quran = ayahDiv.querySelector(".quran-text").innerText;
+    const translation = ayahDiv.querySelector(".translation").innerText;
+
+    const text = surah + "\n" + quran + "\n" + translation;
+
+    if (navigator.share) {
+        navigator.share({ text })
+            .then(() => console.log("Shared successfully"))
+            .catch(err => console.error("Error sharing:", err));
+    } else {
+        const shareLinks = document.getElementById("share-links-" + id);
+        const encoded = encodeURIComponent(text);
+        shareLinks.innerHTML = `
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encoded}" target="_blank">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text=${encoded}" target="_blank">X</a>
+            <a href="https://wa.me/?text=${encoded}" target="_blank">WhatsApp</a>
+        `;
+        shareLinks.style.display = "block";
+    }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from maranaw.com/surah.php?surah=23 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Dec 2025 08:38:53 GMT -->
+</html>
+
